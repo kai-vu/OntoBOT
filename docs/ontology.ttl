@@ -1,23 +1,23 @@
-@prefix : <https://w3id.org/OntoBOT#> .
+@prefix : <https://w3id.org/onto-bot#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/OntoBOT#> .
+@base <https://w3id.org/onto-bot#> .
 
-<https://w3id.org/OntoBOT#> rdf:type owl:Ontology ;
-                             <http://purl.org/dc/elements/1.1/creator> _:genid1 ,
-                                                                       _:genid4 ,
-                                                                       _:genid6 ,
-                                                                       _:genid8 ;
-                             <http://purl.org/dc/elements/1.1/description> "An ontology to model environments, components, affordances, instructions, workflows, and actions related to robotic task execution."@en ;
-                             <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                             <http://purl.org/dc/elements/1.1/title> "Ontology for roBOts and acTions"@en ;
-                             <http://purl.org/dc/terms/created> "2025-05-16"^^xsd:date ;
-                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "obot" ;
-                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/OntoBOT#" ;
-                             owl:versionInfo "1.0.0" .
+<https://w3id.org/onto-bot#> rdf:type owl:Ontology ;
+                              <http://purl.org/dc/elements/1.1/creator> _:genid1 ,
+                                                                        _:genid4 ,
+                                                                        _:genid6 ,
+                                                                        _:genid8 ;
+                              <http://purl.org/dc/elements/1.1/description> "An ontology to model environments, components, affordances, instructions, workflows, and actions related to robotic task execution."@en ;
+                              <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                              <http://purl.org/dc/elements/1.1/title> "Ontology for roBOts and acTions"@en ;
+                              <http://purl.org/dc/terms/created> "2025-05-16"^^xsd:date ;
+                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "obot" ;
+                              <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/onto-bot#" ;
+                              owl:versionInfo "1.0.0" .
 
 _:genid1 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
           <http://schema.org/identifier> _:genid2 ;
@@ -181,7 +181,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                 rdfs:range :Component .
 
 
-###  https://w3id.org/OntoBOT#actsOn
+###  https://w3id.org/onto-bot#actsOn
 :actsOn rdf:type owl:ObjectProperty ;
         rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
         rdfs:range :Component ;
@@ -189,7 +189,7 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "acts on"@en .
 
 
-###  https://w3id.org/OntoBOT#follows
+###  https://w3id.org/onto-bot#follows
 :follows rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows> ;
          rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
@@ -198,7 +198,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "follow" .
 
 
-###  https://w3id.org/OntoBOT#hasAction
+###  https://w3id.org/onto-bot#hasAction
 :hasAction rdf:type owl:ObjectProperty ;
            rdfs:domain :Workflow ;
            rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
@@ -206,7 +206,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "has action"@en .
 
 
-###  https://w3id.org/OntoBOT#hasAffordance
+###  https://w3id.org/onto-bot#hasAffordance
 :hasAffordance rdf:type owl:ObjectProperty ;
                rdfs:domain :Component ;
                rdfs:range :Affordance ;
@@ -214,7 +214,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "has affordance"@en .
 
 
-###  https://w3id.org/OntoBOT#hasWorkflow
+###  https://w3id.org/onto-bot#hasWorkflow
 :hasWorkflow rdf:type owl:ObjectProperty ;
              rdfs:domain :Instruction ;
              rdfs:range :Workflow ;
@@ -222,7 +222,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "has workflow"@en .
 
 
-###  https://w3id.org/OntoBOT#isAffordedBy
+###  https://w3id.org/onto-bot#isAffordedBy
 :isAffordedBy rdf:type owl:ObjectProperty ;
               rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
               rdfs:range :Affordance ;
@@ -230,7 +230,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "is afforded by"@en .
 
 
-###  https://w3id.org/OntoBOT#onTopOf
+###  https://w3id.org/onto-bot#onTopOf
 :onTopOf rdf:type owl:ObjectProperty ;
          rdfs:domain :Location ;
          rdfs:range :Component ;
@@ -238,7 +238,7 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "on top of"@en .
 
 
-###  https://w3id.org/OntoBOT#precedes
+###  https://w3id.org/onto-bot#precedes
 :precedes rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes> ;
           rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
@@ -251,12 +251,12 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  https://w3id.org/OntoBOT#:hasNaturalLanguage
-<https://w3id.org/OntoBOT#:hasNaturalLanguage> rdf:type owl:DatatypeProperty ;
-                                               rdfs:domain :Instruction ;
-                                               rdfs:range xsd:string ;
-                                               rdfs:comment "The instruction is expressed in a natural language."@en ;
-                                               rdfs:label "has natural language"@en .
+###  https://w3id.org/onto-bot#:hasNaturalLanguage
+<https://w3id.org/onto-bot#:hasNaturalLanguage> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :Instruction ;
+                                                rdfs:range xsd:string ;
+                                                rdfs:comment "The instruction is expressed in a natural language."@en ;
+                                                rdfs:label "has natural language"@en .
 
 
 #################################################################
@@ -299,27 +299,27 @@ owl:Property rdf:type owl:Class .
 <http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
 
 
-###  https://w3id.org/OntoBOT#Affordance
+###  https://w3id.org/onto-bot#Affordance
 :Affordance rdf:type owl:Class .
 
 
-###  https://w3id.org/OntoBOT#Component
+###  https://w3id.org/onto-bot#Component
 :Component rdf:type owl:Class .
 
 
-###  https://w3id.org/OntoBOT#Environment
+###  https://w3id.org/onto-bot#Environment
 :Environment rdf:type owl:Class .
 
 
-###  https://w3id.org/OntoBOT#Instruction
+###  https://w3id.org/onto-bot#Instruction
 :Instruction rdf:type owl:Class .
 
 
-###  https://w3id.org/OntoBOT#Location
+###  https://w3id.org/onto-bot#Location
 :Location rdf:type owl:Class .
 
 
-###  https://w3id.org/OntoBOT#Workflow
+###  https://w3id.org/onto-bot#Workflow
 :Workflow rdf:type owl:Class ;
           rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow> .
 
@@ -421,62 +421,62 @@ owl:Property rdf:type owl:Class .
                                                          owl:Property .
 
 
-###  https://w3id.org/OntoBOT#Affordance
+###  https://w3id.org/onto-bot#Affordance
 :Affordance rdf:type owl:NamedIndividual ,
                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
 
 
-###  https://w3id.org/OntoBOT#Appliance
+###  https://w3id.org/onto-bot#Appliance
 :Appliance rdf:type owl:NamedIndividual ,
                     :Component ;
            rdfs:comment "An appliance is a type of component."@en ;
            rdfs:label "Appliance"@en .
 
 
-###  https://w3id.org/OntoBOT#Component
+###  https://w3id.org/onto-bot#Component
 :Component rdf:type owl:NamedIndividual ,
                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
 
 
-###  https://w3id.org/OntoBOT#CurrentLocation
+###  https://w3id.org/onto-bot#CurrentLocation
 :CurrentLocation rdf:type owl:NamedIndividual ,
                           <http://www.ease-crc.org/ont/SOMA.owl#Location> ;
                  rdfs:comment "The current location of a component within the environment."@en ;
                  rdfs:label "Current Location"@en .
 
 
-###  https://w3id.org/OntoBOT#Environment
+###  https://w3id.org/onto-bot#Environment
 :Environment rdf:type owl:NamedIndividual ,
                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
 
 
-###  https://w3id.org/OntoBOT#Furniture
+###  https://w3id.org/onto-bot#Furniture
 :Furniture rdf:type owl:NamedIndividual ,
                     :Component ;
            rdfs:comment "A furniture is a type of component."@en ;
            rdfs:label "Furniture"@en .
 
 
-###  https://w3id.org/OntoBOT#Instruction
+###  https://w3id.org/onto-bot#Instruction
 :Instruction rdf:type owl:NamedIndividual ,
                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
 
 
-###  https://w3id.org/OntoBOT#Object
+###  https://w3id.org/onto-bot#Object
 :Object rdf:type owl:NamedIndividual ,
                  :Component ;
         rdfs:comment "An object is a type of component."@en ;
         rdfs:label "Object"@en .
 
 
-###  https://w3id.org/OntoBOT#StandardLocation
+###  https://w3id.org/onto-bot#StandardLocation
 :StandardLocation rdf:type owl:NamedIndividual ,
                            <http://www.ease-crc.org/ont/SOMA.owl#Location> ;
                   rdfs:comment "The location where a component is intended or supposed to be located, which can be different to its current location."@en ;
                   rdfs:label "Standard Location"@en .
 
 
-###  https://w3id.org/OntoBOT#Workflow
+###  https://w3id.org/onto-bot#Workflow
 :Workflow rdf:type owl:NamedIndividual ,
                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
 

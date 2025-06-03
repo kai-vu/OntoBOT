@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/OntoBOT#"
-     xml:base="https://w3id.org/OntoBOT"
+<rdf:RDF xmlns="https://w3id.org/onto-bot#"
+     xml:base="https://w3id.org/onto-bot"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,7 +11,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/">
-    <owl:Ontology rdf:about="https://w3id.org/OntoBOT#">
+    <owl:Ontology rdf:about="https://w3id.org/onto-bot#">
         <dc:creator rdf:nodeID="genid1"/>
         <dc:creator rdf:nodeID="genid4"/>
         <dc:creator rdf:nodeID="genid6"/>
@@ -21,7 +21,7 @@
         <dc:title xml:lang="en">Ontology for roBOts and acTions</dc:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-16</terms:created>
         <vann:preferredNamespacePrefix>obot</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/OntoBOT#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/onto-bot#</vann:preferredNamespaceUri>
         <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
@@ -240,8 +240,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Environment"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Component"/>
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Environment"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Component"/>
         <rdfs:comment xml:lang="en">An environment has one or more components.</rdfs:comment>
         <rdfs:label xml:lang="en">has component</rdfs:label>
     </owl:ObjectProperty>
@@ -252,8 +252,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Component"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Location"/>
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Location"/>
         <rdfs:comment xml:lang="en">A component has a location within the environment, which can refer to another component.</rdfs:comment>
         <rdfs:label xml:lang="en">has location</rdfs:label>
     </owl:ObjectProperty>
@@ -271,8 +271,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfContains">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Location"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Component"/>
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Location"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Component"/>
     </owl:ObjectProperty>
     
 
@@ -281,8 +281,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfOverlaps">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Location"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Component"/>
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Location"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Component"/>
     </owl:ObjectProperty>
     
 
@@ -291,28 +291,28 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfWithin">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Location"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Component"/>
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Location"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Component"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/OntoBOT#actsOn -->
+    <!-- https://w3id.org/onto-bot#actsOn -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/OntoBOT#actsOn">
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#actsOn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Component"/>
         <rdfs:comment xml:lang="en">An action acts on a component.</rdfs:comment>
         <rdfs:label xml:lang="en">acts on</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/OntoBOT#follows -->
+    <!-- https://w3id.org/onto-bot#follows -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/OntoBOT#follows">
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#follows">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows"/>
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
@@ -322,11 +322,11 @@
     
 
 
-    <!-- https://w3id.org/OntoBOT#hasAction -->
+    <!-- https://w3id.org/onto-bot#hasAction -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/OntoBOT#hasAction">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Workflow"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#hasAction">
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Workflow"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
         <rdfs:comment xml:lang="en">A workflow has one or multiple clear atomic actions.</rdfs:comment>
         <rdfs:label xml:lang="en">has action</rdfs:label>
@@ -334,58 +334,58 @@
     
 
 
-    <!-- https://w3id.org/OntoBOT#hasAffordance -->
+    <!-- https://w3id.org/onto-bot#hasAffordance -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/OntoBOT#hasAffordance">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Component"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#hasAffordance">
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">A component has one or more affordances that indicate how it can be used.</rdfs:comment>
         <rdfs:label xml:lang="en">has affordance</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/OntoBOT#hasWorkflow -->
+    <!-- https://w3id.org/onto-bot#hasWorkflow -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/OntoBOT#hasWorkflow">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Instruction"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Workflow"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#hasWorkflow">
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Instruction"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Workflow"/>
         <rdfs:comment xml:lang="en">An instruction has a workflow that needs to be executed.</rdfs:comment>
         <rdfs:label xml:lang="en">has workflow</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/OntoBOT#isAffordedBy -->
+    <!-- https://w3id.org/onto-bot#isAffordedBy -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/OntoBOT#isAffordedBy">
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#isAffordedBy">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">An action is afforded by an affordance.</rdfs:comment>
         <rdfs:label xml:lang="en">is afforded by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/OntoBOT#onTopOf -->
+    <!-- https://w3id.org/onto-bot#onTopOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/OntoBOT#onTopOf">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Location"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoBOT#Component"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#onTopOf">
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Location"/>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Component"/>
         <rdfs:comment xml:lang="en">The location of component can be on top of another component.</rdfs:comment>
         <rdfs:label xml:lang="en">on top of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/OntoBOT#precedes -->
+    <!-- https://w3id.org/onto-bot#precedes -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/OntoBOT#precedes">
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#precedes">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes"/>
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
@@ -407,11 +407,11 @@
     
 
 
-    <!-- https://w3id.org/OntoBOT#:hasNaturalLanguage -->
+    <!-- https://w3id.org/onto-bot#:hasNaturalLanguage -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/OntoBOT#:hasNaturalLanguage">
-        <rdfs:domain rdf:resource="https://w3id.org/OntoBOT#Instruction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/onto-bot#:hasNaturalLanguage">
+        <rdfs:domain rdf:resource="https://w3id.org/onto-bot#Instruction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The instruction is expressed in a natural language.</rdfs:comment>
         <rdfs:label xml:lang="en">has natural language</rdfs:label>
@@ -494,45 +494,45 @@
     
 
 
-    <!-- https://w3id.org/OntoBOT#Affordance -->
+    <!-- https://w3id.org/onto-bot#Affordance -->
 
 
-    <owl:Class rdf:about="https://w3id.org/OntoBOT#Affordance"/>
+    <owl:Class rdf:about="https://w3id.org/onto-bot#Affordance"/>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Component -->
+    <!-- https://w3id.org/onto-bot#Component -->
 
 
-    <owl:Class rdf:about="https://w3id.org/OntoBOT#Component"/>
+    <owl:Class rdf:about="https://w3id.org/onto-bot#Component"/>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Environment -->
+    <!-- https://w3id.org/onto-bot#Environment -->
 
 
-    <owl:Class rdf:about="https://w3id.org/OntoBOT#Environment"/>
+    <owl:Class rdf:about="https://w3id.org/onto-bot#Environment"/>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Instruction -->
+    <!-- https://w3id.org/onto-bot#Instruction -->
 
 
-    <owl:Class rdf:about="https://w3id.org/OntoBOT#Instruction"/>
+    <owl:Class rdf:about="https://w3id.org/onto-bot#Instruction"/>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Location -->
+    <!-- https://w3id.org/onto-bot#Location -->
 
 
-    <owl:Class rdf:about="https://w3id.org/OntoBOT#Location"/>
+    <owl:Class rdf:about="https://w3id.org/onto-bot#Location"/>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Workflow -->
+    <!-- https://w3id.org/onto-bot#Workflow -->
 
 
-    <owl:Class rdf:about="https://w3id.org/OntoBOT#Workflow">
+    <owl:Class rdf:about="https://w3id.org/onto-bot#Workflow">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow"/>
     </owl:Class>
     
@@ -554,7 +554,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Closing">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">Closing is an affordance that enables a component to be closed.</rdfs:comment>
         <rdfs:label xml:lang="en">Closing</rdfs:label>
     </owl:NamedIndividual>
@@ -565,7 +565,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Delivering">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">Delivering is an affordance that enables a component to be delivered.</rdfs:comment>
         <rdfs:label xml:lang="en">Delivering</rdfs:label>
     </owl:NamedIndividual>
@@ -576,7 +576,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Grasping">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">Grasping is an affordance that enables a component to be grasped.</rdfs:comment>
         <rdfs:label xml:lang="en">Grasping</rdfs:label>
     </owl:NamedIndividual>
@@ -587,7 +587,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Holding">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">Holding is an affordance that enables a component to be held.</rdfs:comment>
         <rdfs:label xml:lang="en">Holding</rdfs:label>
     </owl:NamedIndividual>
@@ -607,7 +607,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Opening">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">Opening is an affordance that enables a component to be opened.</rdfs:comment>
         <rdfs:label xml:lang="en">Opening</rdfs:label>
     </owl:NamedIndividual>
@@ -618,7 +618,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#PickingUp">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">Picking up is an affordance that enables a component to be picked up.</rdfs:comment>
         <rdfs:label xml:lang="en">PickingUp</rdfs:label>
     </owl:NamedIndividual>
@@ -629,7 +629,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Pulling">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">Pulling is an affordance that enables a component to be pulled.</rdfs:comment>
         <rdfs:label xml:lang="en">Pulling</rdfs:label>
     </owl:NamedIndividual>
@@ -640,7 +640,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Pushing">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">Pushing is an affordance that enables a component to be pushed.</rdfs:comment>
         <rdfs:label xml:lang="en">Pushing</rdfs:label>
     </owl:NamedIndividual>
@@ -651,7 +651,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/SOMA.owl#PuttingDown">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Affordance"/>
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Affordance"/>
         <rdfs:comment xml:lang="en">Putting down is an affordance that enables a component to be put down.</rdfs:comment>
         <rdfs:label xml:lang="en">PuttingDown</rdfs:label>
     </owl:NamedIndividual>
@@ -703,39 +703,39 @@
     
 
 
-    <!-- https://w3id.org/OntoBOT#Affordance -->
+    <!-- https://w3id.org/onto-bot#Affordance -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#Affordance">
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#Affordance">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Appliance -->
+    <!-- https://w3id.org/onto-bot#Appliance -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#Appliance">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Component"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#Appliance">
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Component"/>
         <rdfs:comment xml:lang="en">An appliance is a type of component.</rdfs:comment>
         <rdfs:label xml:lang="en">Appliance</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Component -->
+    <!-- https://w3id.org/onto-bot#Component -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#Component">
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#Component">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/OntoBOT#CurrentLocation -->
+    <!-- https://w3id.org/onto-bot#CurrentLocation -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#CurrentLocation">
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#CurrentLocation">
         <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Location"/>
         <rdfs:comment xml:lang="en">The current location of a component within the environment.</rdfs:comment>
         <rdfs:label xml:lang="en">Current Location</rdfs:label>
@@ -743,50 +743,50 @@
     
 
 
-    <!-- https://w3id.org/OntoBOT#Environment -->
+    <!-- https://w3id.org/onto-bot#Environment -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#Environment">
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#Environment">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Furniture -->
+    <!-- https://w3id.org/onto-bot#Furniture -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#Furniture">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Component"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#Furniture">
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Component"/>
         <rdfs:comment xml:lang="en">A furniture is a type of component.</rdfs:comment>
         <rdfs:label xml:lang="en">Furniture</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Instruction -->
+    <!-- https://w3id.org/onto-bot#Instruction -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#Instruction">
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#Instruction">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/OntoBOT#Object -->
+    <!-- https://w3id.org/onto-bot#Object -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#Object">
-        <rdf:type rdf:resource="https://w3id.org/OntoBOT#Component"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#Object">
+        <rdf:type rdf:resource="https://w3id.org/onto-bot#Component"/>
         <rdfs:comment xml:lang="en">An object is a type of component.</rdfs:comment>
         <rdfs:label xml:lang="en">Object</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/OntoBOT#StandardLocation -->
+    <!-- https://w3id.org/onto-bot#StandardLocation -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#StandardLocation">
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#StandardLocation">
         <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Location"/>
         <rdfs:comment xml:lang="en">The location where a component is intended or supposed to be located, which can be different to its current location.</rdfs:comment>
         <rdfs:label xml:lang="en">Standard Location</rdfs:label>
@@ -794,10 +794,10 @@
     
 
 
-    <!-- https://w3id.org/OntoBOT#Workflow -->
+    <!-- https://w3id.org/onto-bot#Workflow -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/OntoBOT#Workflow">
+    <owl:NamedIndividual rdf:about="https://w3id.org/onto-bot#Workflow">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
     </owl:NamedIndividual>
     
@@ -836,23 +836,23 @@
         <rdfs:comment xml:lang="en">The location of a component can be within another component.</rdfs:comment>
         <rdfs:label xml:lang="en">is within</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/OntoBOT#Affordance">
+    <rdf:Description rdf:about="https://w3id.org/onto-bot#Affordance">
         <rdfs:comment xml:lang="en">An affordance is a property of an object that indicates how it can be used.</rdfs:comment>
         <rdfs:label xml:lang="en">Affordance</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/OntoBOT#Component">
+    <rdf:Description rdf:about="https://w3id.org/onto-bot#Component">
         <rdfs:comment xml:lang="en">A component is a part of an environment that can be used to perform tasks or actions.</rdfs:comment>
         <rdfs:label xml:lang="en">Component</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/OntoBOT#Environment">
+    <rdf:Description rdf:about="https://w3id.org/onto-bot#Environment">
         <rdfs:comment xml:lang="en">An environment is an area or context in which components are found.</rdfs:comment>
         <rdfs:label xml:lang="en">Environment</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/OntoBOT#Instruction">
+    <rdf:Description rdf:about="https://w3id.org/onto-bot#Instruction">
         <rdfs:comment xml:lang="en">An instruction is a command or directive given to a robot.</rdfs:comment>
         <rdfs:label xml:lang="en">Instruction</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/OntoBOT#Workflow">
+    <rdf:Description rdf:about="https://w3id.org/onto-bot#Workflow">
         <rdfs:comment xml:lang="en">A workflow is a sequence of tasks or processes that are carried out to fulfil the instruction.</rdfs:comment>
         <rdfs:label xml:lang="en">Workflow</rdfs:label>
     </rdf:Description>
