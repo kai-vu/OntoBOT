@@ -1,0 +1,256 @@
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix dc:     <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix geo:    <http://www.opengis.net/ont/geosparql#> .
+@prefix soma:   <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix dul:    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix obot:   <https://w3id.org/OntoBOT#> .
+
+
+###################################
+# ONTOLOGY METADATA
+###################################
+
+<https://w3id.org/OntoBOT#> a owl:Ontology ;
+    dc:title "Ontology for roBOts and acTions"@en ;
+    dc:description "An ontology to model environments, components, affordances, instructions, workflows, and actions related to robotic task execution."@en ;
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Margherita Martorana" ;
+        foaf:mbox "m.martorana@vu.nl" ;
+        schema:identifier [
+            a schema:PropertyValue ;
+            schema:propertyID "ORCID" ;
+            schema:value "0000-0001-8004-0464" ;
+            foaf:member _:org 
+        ]], [
+        a foaf:Person ;
+        foaf:name "Francesca Urgese" ;
+        schema:identifier [
+            a schema:PropertyValue ;
+            schema:propertyID "ORCID" ;
+            schema:value "" ;
+            foaf:member _:org 
+        ]], [
+        a foaf:Person ;
+        foaf:name "Mark Adamik" ;
+        schema:identifier [
+            a schema:PropertyValue ;
+            schema:propertyID "ORCID" ;
+            schema:value "" ;
+            foaf:member _:org 
+        ]], [
+                   a foaf:Person ;
+        foaf:name "Ilaria Tiddi" ;
+        schema:identifier [
+            a schema:PropertyValue ;
+            schema:propertyID "ORCID" ;
+            schema:value "" ;
+            foaf:member _:org  
+        ]] ;
+    dcterms:created "2025-05-16"^^xsd:date ;
+    owl:versionInfo "1.0.0" ;
+    dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "obot";
+    vann:preferredNamespaceUri "https://w3id.org/OntoBOT#" .
+
+_:org a schema:Organization ;
+    schema:name "Knowledge & AI Group - Vrije Universiteit Amsterdam" .
+
+###################################
+# CLASSES
+###################################
+
+<https://w3id.org/OntoBOT#Environment> a owl:Class, dul:Entity ;
+    rdfs:label "Environment"@en ;
+    rdfs:comment "An environment is an area or context in which components are found."@en .
+
+<https://w3id.org/OntoBOT#Component> a owl:Class, dul:Entity ;
+    rdfs:label "Component"@en ;
+    rdfs:comment "A component is a part of an environment that can be used to perform tasks or actions."@en .
+
+<https://w3id.org/OntoBOT#Appliance> a <https://w3id.org/OntoBOT#Component> ;
+    rdfs:label "Appliance"@en ;
+    rdfs:comment "An appliance is a type of component."@en .
+
+<https://w3id.org/OntoBOT#Furniture> a <https://w3id.org/OntoBOT#Component> ;
+    rdfs:label "Furniture"@en ;
+    rdfs:comment "A furniture is a type of component."@en .
+
+<https://w3id.org/OntoBOT#Object> a <https://w3id.org/OntoBOT#Component> ;
+    rdfs:label "Object"@en ;
+    rdfs:comment "An object is a type of component."@en .
+
+soma:Location a owl:Class, dul:Entity ;
+    rdfs:label "Location"@en ;
+    rdfs:comment "A location of a specific component within the environment."@en .
+
+obot:CurrentLocation a soma:Location ;
+    rdfs:label "Current Location"@en ;
+    rdfs:comment "The current location of a component within the environment."@en .
+
+obot:StandardLocation a soma:Location ;
+    rdfs:label "Standard Location"@en ;
+    rdfs:comment "The location where a component is intended or supposed to be located, which can be different to its current location."@en .
+
+<https://w3id.org/OntoBOT#Affordance> a owl:Class, dul:Entity ;
+    rdfs:label "Affordance"@en ;
+    rdfs:comment "An affordance is a property of an object that indicates how it can be used."@en .
+
+soma:Closing a <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "Closing"@en ;
+    rdfs:comment "Closing is an affordance that enables a component to be closed."@en .
+
+soma:Opening a <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "Opening"@en ;
+    rdfs:comment "Opening is an affordance that enables a component to be opened."@en .
+
+soma:Delivering a <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "Delivering"@en ;
+    rdfs:comment "Delivering is an affordance that enables a component to be delivered."@en .
+
+soma:Holding a <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "Holding"@en ;
+    rdfs:comment "Holding is an affordance that enables a component to be held."@en .
+
+soma:PickingUp a <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "PickingUp"@en ;
+    rdfs:comment "Picking up is an affordance that enables a component to be picked up."@en .
+
+soma:PuttingDown a <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "PuttingDown"@en ;
+    rdfs:comment "Putting down is an affordance that enables a component to be put down."@en .
+
+soma:Pulling a <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "Pulling"@en ;
+    rdfs:comment "Pulling is an affordance that enables a component to be pulled."@en .
+
+soma:Pushing a <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "Pushing"@en ;
+    rdfs:comment "Pushing is an affordance that enables a component to be pushed."@en .
+
+soma:Grasping a <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "Grasping"@en ;
+    rdfs:comment "Grasping is an affordance that enables a component to be grasped."@en .
+
+<https://w3id.org/OntoBOT#Instruction> a owl:Class, dul:Entity ;
+    rdfs:label "Instruction"@en ;
+    rdfs:comment "An instruction is a command or directive given to a robot."@en .
+
+<https://w3id.org/OntoBOT#Workflow> a owl:Class, dul:Entity ;
+    rdfs:subClassOf dul:Workflow ;
+    rdfs:label "Workflow"@en ;
+    rdfs:comment "A workflow is a sequence of tasks or processes that are carried out to fulfil the instruction."@en .
+
+dul:Action a owl:Class, dul:Entity ;
+    rdfs:label "Action"@en ;
+    rdfs:comment "An action is an atomic, single, clear action that is carried out to fulfil the instruction."@en .
+
+dul:Agent a owl:Class, dul:Entity ;
+    rdfs:label "Agent"@en ;
+    rdfs:comment "An agent performing an action."@en .
+
+###################################
+# OBJECT PROPERTIES
+###################################
+
+dul:hasComponent a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/OntoBOT#Environment> ;
+    rdfs:range <https://w3id.org/OntoBOT#Component> ;
+    rdfs:label "has component"@en ;
+    rdfs:comment "An environment has one or more components."@en .
+
+<https://w3id.org/OntoBOT#hasAffordance> a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/OntoBOT#Component> ;
+    rdfs:range <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "has affordance"@en ;
+    rdfs:comment "A component has one or more affordances that indicate how it can be used."@en .
+
+dul:hasLocation a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/OntoBOT#Component> ;
+    rdfs:range <https://w3id.org/OntoBOT#Location> ;
+    rdfs:label "has location"@en ;
+    rdfs:comment "A component has a location within the environment, which can refer to another component."@en .
+
+<https://w3id.org/OntoBOT#onTopOf> a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/OntoBOT#Location> ;
+    rdfs:range <https://w3id.org/OntoBOT#Component> ;
+    rdfs:label "on top of"@en ;
+    rdfs:comment "The location of component can be on top of another component."@en .
+
+geo:sfContains a owl:Property ;
+    rdfs:domain <https://w3id.org/OntoBOT#Location> ;
+    rdfs:range <https://w3id.org/OntoBOT#Component> ;
+    rdfs:label "contains"@en ;
+    rdfs:comment "The location of a component can be contained in another component."@en .
+
+geo:sfWithin a owl:Property ;
+    rdfs:domain <https://w3id.org/OntoBOT#Location> ;
+    rdfs:range <https://w3id.org/OntoBOT#Component> ;
+    rdfs:label "is within"@en ;
+    rdfs:comment "The location of a component can be within another component."@en .
+
+geo:sfOverlaps a owl:Property ;
+    rdfs:domain <https://w3id.org/OntoBOT#Location> ;
+    rdfs:range <https://w3id.org/OntoBOT#Component> ;
+    rdfs:label "overlaps"@en ;
+    rdfs:comment "The location of a component can overlaps with another component."@en .
+
+<https://w3id.org/OntoBOT#hasWorkflow> a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/OntoBOT#Instruction> ;
+    rdfs:range <https://w3id.org/OntoBOT#Workflow> ;
+    rdfs:label "has workflow"@en ;
+    rdfs:comment "An instruction has a workflow that needs to be executed."@en .
+
+<https://w3id.org/OntoBOT#hasAction> a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/OntoBOT#Workflow> ;
+    rdfs:range dul:Action ;
+    rdfs:label "has action"@en ;
+    rdfs:comment "A workflow has one or multiple clear atomic actions."@en .
+
+<https://w3id.org/OntoBOT#precedes> a owl:ObjectProperty ;
+    rdfs:subPropertyOf  dul:precedes ;
+    rdfs:domain dul:Action ;
+    rdfs:range dul:Action ;
+    rdfs:label "precedes" ;
+    rdfs:comment "An action can precede another action."@en .
+
+<https://w3id.org/OntoBOT#follows> a owl:ObjectProperty ;
+    rdfs:subPropertyOf dul:follows ;
+    rdfs:domain dul:Action ;
+    rdfs:range dul:Action ;
+    rdfs:label "follow" ;
+    rdfs:comment "An action can follow another action."@en .
+
+soma:isPerformedBy a owl:ObjectProperty ;
+    rdfs:domain dul:Action ;
+    rdfs:range dul:Agent ;
+    rdfs:label "is performed by"@en ;
+    rdfs:comment "An action is performed by an agent."@en .
+
+<https://w3id.org/OntoBOT#actsOn> a owl:ObjectProperty ;
+    rdfs:domain dul:Action ;
+    rdfs:range <https://w3id.org/OntoBOT#Component> ;
+    rdfs:label "acts on"@en ;
+    rdfs:comment "An action acts on a component."@en .
+
+<https://w3id.org/OntoBOT#isAffordedBy> a owl:ObjectProperty ;
+    rdfs:domain dul:Action ;
+    rdfs:range <https://w3id.org/OntoBOT#Affordance> ;
+    rdfs:label "is afforded by"@en ;
+    rdfs:comment "An action is afforded by an affordance."@en .
+
+###################################
+# DATA PROPERTIES
+###################################
+
+<https://w3id.org/OntoBOT#:hasNaturalLanguage> a owl:DatatypeProperty ;
+    rdfs:domain <https://w3id.org/OntoBOT#Instruction> ;
+    rdfs:range xsd:string ;
+    rdfs:label "has natural language"@en ;
+    rdfs:comment "The instruction is expressed in a natural language."@en .

@@ -1,0 +1,466 @@
+<https://w3id.org/OntoBOT#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/OntoBOT#> <http://purl.org/dc/elements/1.1/creator> _:genid1 .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Margherita Martorana" .
+_:genid1 <http://xmlns.com/foaf/0.1/mbox> "m.martorana@vu.nl" .
+_:genid1 <http://schema.org/identifier> _:genid2 .
+_:genid2 <http://xmlns.com/foaf/0.1/member> _:genid3 .
+_:genid3 <http://schema.org/name> "Knowledge & AI Group - Vrije Universiteit Amsterdam" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
+<http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://schema.org/value> "0000-0001-8004-0464" .
+_:genid2 <http://schema.org/propertyID> "ORCID" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .
+<http://schema.org/PropertyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OntoBOT#> <http://purl.org/dc/elements/1.1/creator> _:genid4 .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Francesca Urgese" .
+_:genid4 <http://schema.org/identifier> _:genid5 .
+_:genid5 <http://xmlns.com/foaf/0.1/member> _:genid3 .
+_:genid5 <http://schema.org/value> "" .
+_:genid5 <http://schema.org/propertyID> "ORCID" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/OntoBOT#> <http://purl.org/dc/elements/1.1/creator> _:genid6 .
+_:genid6 <http://xmlns.com/foaf/0.1/name> "Mark Adamik" .
+_:genid6 <http://schema.org/identifier> _:genid7 .
+_:genid7 <http://xmlns.com/foaf/0.1/member> _:genid3 .
+_:genid7 <http://schema.org/value> "" .
+_:genid7 <http://schema.org/propertyID> "ORCID" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/OntoBOT#> <http://purl.org/dc/elements/1.1/creator> _:genid8 .
+_:genid8 <http://xmlns.com/foaf/0.1/name> "Ilaria Tiddi" .
+_:genid8 <http://schema.org/identifier> _:genid9 .
+_:genid9 <http://xmlns.com/foaf/0.1/member> _:genid3 .
+_:genid9 <http://schema.org/value> "" .
+_:genid9 <http://schema.org/propertyID> "ORCID" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/OntoBOT#> <http://purl.org/dc/elements/1.1/description> "An ontology to model environments, components, affordances, instructions, workflows, and actions related to robotic task execution."@en .
+<https://w3id.org/OntoBOT#> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/OntoBOT#> <http://purl.org/dc/elements/1.1/title> "Ontology for roBOts and acTions"@en .
+<https://w3id.org/OntoBOT#> <http://purl.org/dc/terms/created> "2025-05-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/OntoBOT#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "obot" .
+<https://w3id.org/OntoBOT#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/OntoBOT#" .
+<https://w3id.org/OntoBOT#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/identifier
+<http://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/propertyID
+<http://schema.org/propertyID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/value
+<http://schema.org/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy
+<http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> .
+<http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An action is performed by an agent."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is performed by"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Environment> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Component> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "An environment has one or more components."@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent> <http://www.w3.org/2000/01/rdf-schema#label> "has component"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Component> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Location> .
+<https://w3id.org/OntoBOT#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A component has a location within the environment, which can refer to another component."@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Location> .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Component> .
+# 
+# http://www.opengis.net/ont/geosparql#sfOverlaps
+<http://www.opengis.net/ont/geosparql#sfOverlaps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfOverlaps> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Location> .
+<http://www.opengis.net/ont/geosparql#sfOverlaps> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Component> .
+# 
+# http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Location> .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Component> .
+# 
+# https://w3id.org/OntoBOT#actsOn
+<https://w3id.org/OntoBOT#actsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OntoBOT#actsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<https://w3id.org/OntoBOT#actsOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Component> .
+<https://w3id.org/OntoBOT#actsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "An action acts on a component."@en .
+<https://w3id.org/OntoBOT#actsOn> <http://www.w3.org/2000/01/rdf-schema#label> "acts on"@en .
+# 
+# https://w3id.org/OntoBOT#follows
+<https://w3id.org/OntoBOT#follows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OntoBOT#follows> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows> .
+<https://w3id.org/OntoBOT#follows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<https://w3id.org/OntoBOT#follows> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<https://w3id.org/OntoBOT#follows> <http://www.w3.org/2000/01/rdf-schema#comment> "An action can follow another action."@en .
+<https://w3id.org/OntoBOT#follows> <http://www.w3.org/2000/01/rdf-schema#label> "follow" .
+# 
+# https://w3id.org/OntoBOT#hasAction
+<https://w3id.org/OntoBOT#hasAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OntoBOT#hasAction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Workflow> .
+<https://w3id.org/OntoBOT#hasAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<https://w3id.org/OntoBOT#hasAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A workflow has one or multiple clear atomic actions."@en .
+<https://w3id.org/OntoBOT#hasAction> <http://www.w3.org/2000/01/rdf-schema#label> "has action"@en .
+# 
+# https://w3id.org/OntoBOT#hasAffordance
+<https://w3id.org/OntoBOT#hasAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OntoBOT#hasAffordance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Component> .
+<https://w3id.org/OntoBOT#hasAffordance> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Affordance> .
+<https://w3id.org/OntoBOT#hasAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "A component has one or more affordances that indicate how it can be used."@en .
+<https://w3id.org/OntoBOT#hasAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "has affordance"@en .
+# 
+# https://w3id.org/OntoBOT#hasWorkflow
+<https://w3id.org/OntoBOT#hasWorkflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OntoBOT#hasWorkflow> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Instruction> .
+<https://w3id.org/OntoBOT#hasWorkflow> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Workflow> .
+<https://w3id.org/OntoBOT#hasWorkflow> <http://www.w3.org/2000/01/rdf-schema#comment> "An instruction has a workflow that needs to be executed."@en .
+<https://w3id.org/OntoBOT#hasWorkflow> <http://www.w3.org/2000/01/rdf-schema#label> "has workflow"@en .
+# 
+# https://w3id.org/OntoBOT#isAffordedBy
+<https://w3id.org/OntoBOT#isAffordedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OntoBOT#isAffordedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<https://w3id.org/OntoBOT#isAffordedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Affordance> .
+<https://w3id.org/OntoBOT#isAffordedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An action is afforded by an affordance."@en .
+<https://w3id.org/OntoBOT#isAffordedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is afforded by"@en .
+# 
+# https://w3id.org/OntoBOT#onTopOf
+<https://w3id.org/OntoBOT#onTopOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OntoBOT#onTopOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Location> .
+<https://w3id.org/OntoBOT#onTopOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OntoBOT#Component> .
+<https://w3id.org/OntoBOT#onTopOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The location of component can be on top of another component."@en .
+<https://w3id.org/OntoBOT#onTopOf> <http://www.w3.org/2000/01/rdf-schema#label> "on top of"@en .
+# 
+# https://w3id.org/OntoBOT#precedes
+<https://w3id.org/OntoBOT#precedes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OntoBOT#precedes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes> .
+<https://w3id.org/OntoBOT#precedes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<https://w3id.org/OntoBOT#precedes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> .
+<https://w3id.org/OntoBOT#precedes> <http://www.w3.org/2000/01/rdf-schema#comment> "An action can precede another action."@en .
+<https://w3id.org/OntoBOT#precedes> <http://www.w3.org/2000/01/rdf-schema#label> "precedes" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/OntoBOT#:hasNaturalLanguage
+<https://w3id.org/OntoBOT#:hasNaturalLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/OntoBOT#:hasNaturalLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OntoBOT#Instruction> .
+<https://w3id.org/OntoBOT#:hasNaturalLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/OntoBOT#:hasNaturalLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "The instruction is expressed in a natural language."@en .
+<https://w3id.org/OntoBOT#:hasNaturalLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "has natural language"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Organization
+# 
+# http://schema.org/PropertyValue
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#Location
+<http://www.ease-crc.org/ont/SOMA.owl#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#Property
+<http://www.w3.org/2002/07/owl#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+# https://w3id.org/OntoBOT#Affordance
+<https://w3id.org/OntoBOT#Affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/OntoBOT#Component
+<https://w3id.org/OntoBOT#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/OntoBOT#Environment
+<https://w3id.org/OntoBOT#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/OntoBOT#Instruction
+<https://w3id.org/OntoBOT#Instruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/OntoBOT#Location
+# 
+# https://w3id.org/OntoBOT#Workflow
+<https://w3id.org/OntoBOT#Workflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OntoBOT#Workflow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#Closing
+<http://www.ease-crc.org/ont/SOMA.owl#Closing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#Closing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Affordance> .
+<http://www.ease-crc.org/ont/SOMA.owl#Closing> <http://www.w3.org/2000/01/rdf-schema#comment> "Closing is an affordance that enables a component to be closed."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#Closing> <http://www.w3.org/2000/01/rdf-schema#label> "Closing"@en .
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#Delivering
+<http://www.ease-crc.org/ont/SOMA.owl#Delivering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#Delivering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Affordance> .
+<http://www.ease-crc.org/ont/SOMA.owl#Delivering> <http://www.w3.org/2000/01/rdf-schema#comment> "Delivering is an affordance that enables a component to be delivered."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#Delivering> <http://www.w3.org/2000/01/rdf-schema#label> "Delivering"@en .
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#Grasping
+<http://www.ease-crc.org/ont/SOMA.owl#Grasping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#Grasping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Affordance> .
+<http://www.ease-crc.org/ont/SOMA.owl#Grasping> <http://www.w3.org/2000/01/rdf-schema#comment> "Grasping is an affordance that enables a component to be grasped."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#Grasping> <http://www.w3.org/2000/01/rdf-schema#label> "Grasping"@en .
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#Holding
+<http://www.ease-crc.org/ont/SOMA.owl#Holding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#Holding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Affordance> .
+<http://www.ease-crc.org/ont/SOMA.owl#Holding> <http://www.w3.org/2000/01/rdf-schema#comment> "Holding is an affordance that enables a component to be held."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#Holding> <http://www.w3.org/2000/01/rdf-schema#label> "Holding"@en .
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#Location
+<http://www.ease-crc.org/ont/SOMA.owl#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#Opening
+<http://www.ease-crc.org/ont/SOMA.owl#Opening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#Opening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Affordance> .
+<http://www.ease-crc.org/ont/SOMA.owl#Opening> <http://www.w3.org/2000/01/rdf-schema#comment> "Opening is an affordance that enables a component to be opened."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#Opening> <http://www.w3.org/2000/01/rdf-schema#label> "Opening"@en .
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#PickingUp
+<http://www.ease-crc.org/ont/SOMA.owl#PickingUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#PickingUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Affordance> .
+<http://www.ease-crc.org/ont/SOMA.owl#PickingUp> <http://www.w3.org/2000/01/rdf-schema#comment> "Picking up is an affordance that enables a component to be picked up."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#PickingUp> <http://www.w3.org/2000/01/rdf-schema#label> "PickingUp"@en .
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#Pulling
+<http://www.ease-crc.org/ont/SOMA.owl#Pulling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#Pulling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Affordance> .
+<http://www.ease-crc.org/ont/SOMA.owl#Pulling> <http://www.w3.org/2000/01/rdf-schema#comment> "Pulling is an affordance that enables a component to be pulled."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#Pulling> <http://www.w3.org/2000/01/rdf-schema#label> "Pulling"@en .
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#Pushing
+<http://www.ease-crc.org/ont/SOMA.owl#Pushing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#Pushing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Affordance> .
+<http://www.ease-crc.org/ont/SOMA.owl#Pushing> <http://www.w3.org/2000/01/rdf-schema#comment> "Pushing is an affordance that enables a component to be pushed."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#Pushing> <http://www.w3.org/2000/01/rdf-schema#label> "Pushing"@en .
+# 
+# http://www.ease-crc.org/ont/SOMA.owl#PuttingDown
+<http://www.ease-crc.org/ont/SOMA.owl#PuttingDown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ease-crc.org/ont/SOMA.owl#PuttingDown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Affordance> .
+<http://www.ease-crc.org/ont/SOMA.owl#PuttingDown> <http://www.w3.org/2000/01/rdf-schema#comment> "Putting down is an affordance that enables a component to be put down."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#PuttingDown> <http://www.w3.org/2000/01/rdf-schema#label> "PuttingDown"@en .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+# 
+# http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://www.opengis.net/ont/geosparql#sfOverlaps
+<http://www.opengis.net/ont/geosparql#sfOverlaps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opengis.net/ont/geosparql#sfOverlaps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Property> .
+# 
+# https://w3id.org/OntoBOT#Affordance
+<https://w3id.org/OntoBOT#Affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#Affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+# 
+# https://w3id.org/OntoBOT#Appliance
+<https://w3id.org/OntoBOT#Appliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#Appliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Component> .
+<https://w3id.org/OntoBOT#Appliance> <http://www.w3.org/2000/01/rdf-schema#comment> "An appliance is a type of component."@en .
+<https://w3id.org/OntoBOT#Appliance> <http://www.w3.org/2000/01/rdf-schema#label> "Appliance"@en .
+# 
+# https://w3id.org/OntoBOT#Component
+<https://w3id.org/OntoBOT#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+# 
+# https://w3id.org/OntoBOT#CurrentLocation
+<https://w3id.org/OntoBOT#CurrentLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#CurrentLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ease-crc.org/ont/SOMA.owl#Location> .
+<https://w3id.org/OntoBOT#CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The current location of a component within the environment."@en .
+<https://w3id.org/OntoBOT#CurrentLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Current Location"@en .
+# 
+# https://w3id.org/OntoBOT#Environment
+<https://w3id.org/OntoBOT#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+# 
+# https://w3id.org/OntoBOT#Furniture
+<https://w3id.org/OntoBOT#Furniture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#Furniture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Component> .
+<https://w3id.org/OntoBOT#Furniture> <http://www.w3.org/2000/01/rdf-schema#comment> "A furniture is a type of component."@en .
+<https://w3id.org/OntoBOT#Furniture> <http://www.w3.org/2000/01/rdf-schema#label> "Furniture"@en .
+# 
+# https://w3id.org/OntoBOT#Instruction
+<https://w3id.org/OntoBOT#Instruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#Instruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+# 
+# https://w3id.org/OntoBOT#Object
+<https://w3id.org/OntoBOT#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/OntoBOT#Component> .
+<https://w3id.org/OntoBOT#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "An object is a type of component."@en .
+<https://w3id.org/OntoBOT#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Object"@en .
+# 
+# https://w3id.org/OntoBOT#StandardLocation
+<https://w3id.org/OntoBOT#StandardLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#StandardLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ease-crc.org/ont/SOMA.owl#Location> .
+<https://w3id.org/OntoBOT#StandardLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The location where a component is intended or supposed to be located, which can be different to its current location."@en .
+<https://w3id.org/OntoBOT#StandardLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Standard Location"@en .
+# 
+# https://w3id.org/OntoBOT#Workflow
+<https://w3id.org/OntoBOT#Workflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/OntoBOT#Workflow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.ease-crc.org/ont/SOMA.owl#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A location of a specific component within the environment."@en .
+<http://www.ease-crc.org/ont/SOMA.owl#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/2000/01/rdf-schema#comment> "An action is an atomic, single, clear action that is carried out to fulfil the instruction."@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"@en .
+# 
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent performing an action."@en .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+# 
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#comment> "The location of a component can be contained in another component."@en .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
+# 
+<http://www.opengis.net/ont/geosparql#sfOverlaps> <http://www.w3.org/2000/01/rdf-schema#comment> "The location of a component can overlaps with another component."@en .
+<http://www.opengis.net/ont/geosparql#sfOverlaps> <http://www.w3.org/2000/01/rdf-schema#label> "overlaps"@en .
+# 
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#comment> "The location of a component can be within another component."@en .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#label> "is within"@en .
+# 
+<https://w3id.org/OntoBOT#Affordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An affordance is a property of an object that indicates how it can be used."@en .
+<https://w3id.org/OntoBOT#Affordance> <http://www.w3.org/2000/01/rdf-schema#label> "Affordance"@en .
+# 
+<https://w3id.org/OntoBOT#Component> <http://www.w3.org/2000/01/rdf-schema#comment> "A component is a part of an environment that can be used to perform tasks or actions."@en .
+<https://w3id.org/OntoBOT#Component> <http://www.w3.org/2000/01/rdf-schema#label> "Component"@en .
+# 
+<https://w3id.org/OntoBOT#Environment> <http://www.w3.org/2000/01/rdf-schema#comment> "An environment is an area or context in which components are found."@en .
+<https://w3id.org/OntoBOT#Environment> <http://www.w3.org/2000/01/rdf-schema#label> "Environment"@en .
+# 
+<https://w3id.org/OntoBOT#Instruction> <http://www.w3.org/2000/01/rdf-schema#comment> "An instruction is a command or directive given to a robot."@en .
+<https://w3id.org/OntoBOT#Instruction> <http://www.w3.org/2000/01/rdf-schema#label> "Instruction"@en .
+# 
+<https://w3id.org/OntoBOT#Workflow> <http://www.w3.org/2000/01/rdf-schema#comment> "A workflow is a sequence of tasks or processes that are carried out to fulfil the instruction."@en .
+<https://w3id.org/OntoBOT#Workflow> <http://www.w3.org/2000/01/rdf-schema#label> "Workflow"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

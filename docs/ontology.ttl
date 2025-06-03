@@ -1,0 +1,532 @@
+@prefix : <https://w3id.org/OntoBOT#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/OntoBOT#> .
+
+<https://w3id.org/OntoBOT#> rdf:type owl:Ontology ;
+                             <http://purl.org/dc/elements/1.1/creator> _:genid1 ,
+                                                                       _:genid4 ,
+                                                                       _:genid6 ,
+                                                                       _:genid8 ;
+                             <http://purl.org/dc/elements/1.1/description> "An ontology to model environments, components, affordances, instructions, workflows, and actions related to robotic task execution."@en ;
+                             <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                             <http://purl.org/dc/elements/1.1/title> "Ontology for roBOts and acTions"@en ;
+                             <http://purl.org/dc/terms/created> "2025-05-16"^^xsd:date ;
+                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "obot" ;
+                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/OntoBOT#" ;
+                             owl:versionInfo "1.0.0" .
+
+_:genid1 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://schema.org/identifier> _:genid2 ;
+          <http://xmlns.com/foaf/0.1/mbox> "m.martorana@vu.nl" ;
+          <http://xmlns.com/foaf/0.1/name> "Margherita Martorana" .
+
+_:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://schema.org/identifier> _:genid5 ;
+          <http://xmlns.com/foaf/0.1/name> "Francesca Urgese" .
+
+_:genid6 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://schema.org/identifier> _:genid7 ;
+          <http://xmlns.com/foaf/0.1/name> "Mark Adamik" .
+
+_:genid8 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://schema.org/identifier> _:genid9 ;
+          <http://xmlns.com/foaf/0.1/name> "Ilaria Tiddi" .
+
+_:genid2 rdf:type <http://schema.org/PropertyValue> ;
+          <http://schema.org/propertyID> "ORCID" ;
+          <http://schema.org/value> "0000-0001-8004-0464" ;
+          <http://xmlns.com/foaf/0.1/member> _:genid3 .
+
+_:genid5 rdf:type <http://schema.org/PropertyValue> ;
+          <http://schema.org/propertyID> "ORCID" ;
+          <http://schema.org/value> "" ;
+          <http://xmlns.com/foaf/0.1/member> _:genid3 .
+
+_:genid7 rdf:type <http://schema.org/PropertyValue> ;
+          <http://schema.org/propertyID> "ORCID" ;
+          <http://schema.org/value> "" ;
+          <http://xmlns.com/foaf/0.1/member> _:genid3 .
+
+_:genid9 rdf:type <http://schema.org/PropertyValue> ;
+          <http://schema.org/propertyID> "ORCID" ;
+          <http://schema.org/value> "" ;
+          <http://xmlns.com/foaf/0.1/member> _:genid3 .
+
+_:genid3 rdf:type <http://schema.org/Organization> ;
+          <http://schema.org/name> "Knowledge & AI Group - Vrije Universiteit Amsterdam" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/propertyID
+<http://schema.org/propertyID> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/value
+<http://schema.org/value> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy
+<http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
+                                                     rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> ;
+                                                     rdfs:comment "An action is performed by an agent."@en ;
+                                                     rdfs:label "is performed by"@en .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain :Environment ;
+                                                                     rdfs:range :Component ;
+                                                                     rdfs:comment "An environment has one or more components."@en ;
+                                                                     rdfs:label "has component"@en .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain :Component ;
+                                                                    rdfs:range :Location ;
+                                                                    rdfs:comment "A component has a location within the environment, which can refer to another component."@en ;
+                                                                    rdfs:label "has location"@en .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes> rdf:type owl:ObjectProperty .
+
+
+###  http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :Location ;
+                                                  rdfs:range :Component .
+
+
+###  http://www.opengis.net/ont/geosparql#sfOverlaps
+<http://www.opengis.net/ont/geosparql#sfOverlaps> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :Location ;
+                                                  rdfs:range :Component .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain :Location ;
+                                                rdfs:range :Component .
+
+
+###  https://w3id.org/OntoBOT#actsOn
+:actsOn rdf:type owl:ObjectProperty ;
+        rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
+        rdfs:range :Component ;
+        rdfs:comment "An action acts on a component."@en ;
+        rdfs:label "acts on"@en .
+
+
+###  https://w3id.org/OntoBOT#follows
+:follows rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows> ;
+         rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
+         rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
+         rdfs:comment "An action can follow another action."@en ;
+         rdfs:label "follow" .
+
+
+###  https://w3id.org/OntoBOT#hasAction
+:hasAction rdf:type owl:ObjectProperty ;
+           rdfs:domain :Workflow ;
+           rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
+           rdfs:comment "A workflow has one or multiple clear atomic actions."@en ;
+           rdfs:label "has action"@en .
+
+
+###  https://w3id.org/OntoBOT#hasAffordance
+:hasAffordance rdf:type owl:ObjectProperty ;
+               rdfs:domain :Component ;
+               rdfs:range :Affordance ;
+               rdfs:comment "A component has one or more affordances that indicate how it can be used."@en ;
+               rdfs:label "has affordance"@en .
+
+
+###  https://w3id.org/OntoBOT#hasWorkflow
+:hasWorkflow rdf:type owl:ObjectProperty ;
+             rdfs:domain :Instruction ;
+             rdfs:range :Workflow ;
+             rdfs:comment "An instruction has a workflow that needs to be executed."@en ;
+             rdfs:label "has workflow"@en .
+
+
+###  https://w3id.org/OntoBOT#isAffordedBy
+:isAffordedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
+              rdfs:range :Affordance ;
+              rdfs:comment "An action is afforded by an affordance."@en ;
+              rdfs:label "is afforded by"@en .
+
+
+###  https://w3id.org/OntoBOT#onTopOf
+:onTopOf rdf:type owl:ObjectProperty ;
+         rdfs:domain :Location ;
+         rdfs:range :Component ;
+         rdfs:comment "The location of component can be on top of another component."@en ;
+         rdfs:label "on top of"@en .
+
+
+###  https://w3id.org/OntoBOT#precedes
+:precedes rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes> ;
+          rdfs:domain <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
+          rdfs:range <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> ;
+          rdfs:comment "An action can precede another action."@en ;
+          rdfs:label "precedes" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/OntoBOT#:hasNaturalLanguage
+<https://w3id.org/OntoBOT#:hasNaturalLanguage> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain :Instruction ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:comment "The instruction is expressed in a natural language."@en ;
+                                               rdfs:label "has natural language"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.org/Organization
+<http://schema.org/Organization> rdf:type owl:Class .
+
+
+###  http://schema.org/PropertyValue
+<http://schema.org/PropertyValue> rdf:type owl:Class .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#Location
+<http://www.ease-crc.org/ont/SOMA.owl#Location> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owl#Property
+owl:Property rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://w3id.org/OntoBOT#Affordance
+:Affordance rdf:type owl:Class .
+
+
+###  https://w3id.org/OntoBOT#Component
+:Component rdf:type owl:Class .
+
+
+###  https://w3id.org/OntoBOT#Environment
+:Environment rdf:type owl:Class .
+
+
+###  https://w3id.org/OntoBOT#Instruction
+:Instruction rdf:type owl:Class .
+
+
+###  https://w3id.org/OntoBOT#Location
+:Location rdf:type owl:Class .
+
+
+###  https://w3id.org/OntoBOT#Workflow
+:Workflow rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.ease-crc.org/ont/SOMA.owl#Closing
+<http://www.ease-crc.org/ont/SOMA.owl#Closing> rdf:type owl:NamedIndividual ,
+                                                        :Affordance ;
+                                               rdfs:comment "Closing is an affordance that enables a component to be closed."@en ;
+                                               rdfs:label "Closing"@en .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#Delivering
+<http://www.ease-crc.org/ont/SOMA.owl#Delivering> rdf:type owl:NamedIndividual ,
+                                                           :Affordance ;
+                                                  rdfs:comment "Delivering is an affordance that enables a component to be delivered."@en ;
+                                                  rdfs:label "Delivering"@en .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#Grasping
+<http://www.ease-crc.org/ont/SOMA.owl#Grasping> rdf:type owl:NamedIndividual ,
+                                                         :Affordance ;
+                                                rdfs:comment "Grasping is an affordance that enables a component to be grasped."@en ;
+                                                rdfs:label "Grasping"@en .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#Holding
+<http://www.ease-crc.org/ont/SOMA.owl#Holding> rdf:type owl:NamedIndividual ,
+                                                        :Affordance ;
+                                               rdfs:comment "Holding is an affordance that enables a component to be held."@en ;
+                                               rdfs:label "Holding"@en .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#Location
+<http://www.ease-crc.org/ont/SOMA.owl#Location> rdf:type owl:NamedIndividual ,
+                                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#Opening
+<http://www.ease-crc.org/ont/SOMA.owl#Opening> rdf:type owl:NamedIndividual ,
+                                                        :Affordance ;
+                                               rdfs:comment "Opening is an affordance that enables a component to be opened."@en ;
+                                               rdfs:label "Opening"@en .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#PickingUp
+<http://www.ease-crc.org/ont/SOMA.owl#PickingUp> rdf:type owl:NamedIndividual ,
+                                                          :Affordance ;
+                                                 rdfs:comment "Picking up is an affordance that enables a component to be picked up."@en ;
+                                                 rdfs:label "PickingUp"@en .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#Pulling
+<http://www.ease-crc.org/ont/SOMA.owl#Pulling> rdf:type owl:NamedIndividual ,
+                                                        :Affordance ;
+                                               rdfs:comment "Pulling is an affordance that enables a component to be pulled."@en ;
+                                               rdfs:label "Pulling"@en .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#Pushing
+<http://www.ease-crc.org/ont/SOMA.owl#Pushing> rdf:type owl:NamedIndividual ,
+                                                        :Affordance ;
+                                               rdfs:comment "Pushing is an affordance that enables a component to be pushed."@en ;
+                                               rdfs:label "Pushing"@en .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#PuttingDown
+<http://www.ease-crc.org/ont/SOMA.owl#PuttingDown> rdf:type owl:NamedIndividual ,
+                                                            :Affordance ;
+                                                   rdfs:comment "Putting down is an affordance that enables a component to be put down."@en ;
+                                                   rdfs:label "PuttingDown"@en .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> rdf:type owl:NamedIndividual ,
+                                                                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+
+
+###  http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> rdf:type owl:NamedIndividual ,
+                                                           owl:Property .
+
+
+###  http://www.opengis.net/ont/geosparql#sfOverlaps
+<http://www.opengis.net/ont/geosparql#sfOverlaps> rdf:type owl:NamedIndividual ,
+                                                           owl:Property .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:NamedIndividual ,
+                                                         owl:Property .
+
+
+###  https://w3id.org/OntoBOT#Affordance
+:Affordance rdf:type owl:NamedIndividual ,
+                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+
+
+###  https://w3id.org/OntoBOT#Appliance
+:Appliance rdf:type owl:NamedIndividual ,
+                    :Component ;
+           rdfs:comment "An appliance is a type of component."@en ;
+           rdfs:label "Appliance"@en .
+
+
+###  https://w3id.org/OntoBOT#Component
+:Component rdf:type owl:NamedIndividual ,
+                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+
+
+###  https://w3id.org/OntoBOT#CurrentLocation
+:CurrentLocation rdf:type owl:NamedIndividual ,
+                          <http://www.ease-crc.org/ont/SOMA.owl#Location> ;
+                 rdfs:comment "The current location of a component within the environment."@en ;
+                 rdfs:label "Current Location"@en .
+
+
+###  https://w3id.org/OntoBOT#Environment
+:Environment rdf:type owl:NamedIndividual ,
+                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+
+
+###  https://w3id.org/OntoBOT#Furniture
+:Furniture rdf:type owl:NamedIndividual ,
+                    :Component ;
+           rdfs:comment "A furniture is a type of component."@en ;
+           rdfs:label "Furniture"@en .
+
+
+###  https://w3id.org/OntoBOT#Instruction
+:Instruction rdf:type owl:NamedIndividual ,
+                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+
+
+###  https://w3id.org/OntoBOT#Object
+:Object rdf:type owl:NamedIndividual ,
+                 :Component ;
+        rdfs:comment "An object is a type of component."@en ;
+        rdfs:label "Object"@en .
+
+
+###  https://w3id.org/OntoBOT#StandardLocation
+:StandardLocation rdf:type owl:NamedIndividual ,
+                           <http://www.ease-crc.org/ont/SOMA.owl#Location> ;
+                  rdfs:comment "The location where a component is intended or supposed to be located, which can be different to its current location."@en ;
+                  rdfs:label "Standard Location"@en .
+
+
+###  https://w3id.org/OntoBOT#Workflow
+:Workflow rdf:type owl:NamedIndividual ,
+                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.ease-crc.org/ont/SOMA.owl#Location> rdfs:comment "A location of a specific component within the environment."@en ;
+                                                rdfs:label "Location"@en .
+
+
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action> rdfs:comment "An action is an atomic, single, clear action that is carried out to fulfil the instruction."@en ;
+                                                               rdfs:label "Action"@en .
+
+
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> rdfs:comment "An agent performing an action."@en ;
+                                                              rdfs:label "Agent"@en .
+
+
+<http://www.opengis.net/ont/geosparql#sfContains> rdfs:comment "The location of a component can be contained in another component."@en ;
+                                                  rdfs:label "contains"@en .
+
+
+<http://www.opengis.net/ont/geosparql#sfOverlaps> rdfs:comment "The location of a component can overlaps with another component."@en ;
+                                                  rdfs:label "overlaps"@en .
+
+
+<http://www.opengis.net/ont/geosparql#sfWithin> rdfs:comment "The location of a component can be within another component."@en ;
+                                                rdfs:label "is within"@en .
+
+
+:Affordance rdfs:comment "An affordance is a property of an object that indicates how it can be used."@en ;
+            rdfs:label "Affordance"@en .
+
+
+:Component rdfs:comment "A component is a part of an environment that can be used to perform tasks or actions."@en ;
+           rdfs:label "Component"@en .
+
+
+:Environment rdfs:comment "An environment is an area or context in which components are found."@en ;
+             rdfs:label "Environment"@en .
+
+
+:Instruction rdfs:comment "An instruction is a command or directive given to a robot."@en ;
+             rdfs:label "Instruction"@en .
+
+
+:Workflow rdfs:comment "A workflow is a sequence of tasks or processes that are carried out to fulfil the instruction."@en ;
+          rdfs:label "Workflow"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
