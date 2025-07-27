@@ -2,12 +2,12 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/onto-bot", "http://www.ease-crc.org/ont/SOMA.owl", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://www.opengis.net/ont/geosparql" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl", "http://schema.org", "https://w3id.org/pko", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/onto-bot", "http://www.ease-crc.org/ont/SOMA.owl", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://data.mksmart.org/onto-ros/class" ],
     "title" : {
       "en" : "Ontology for roBOts and acTions"
     },
     "iri" : "https://w3id.org/onto-bot#",
-    "version" : "1.0.0",
+    "version" : "2.0.0",
     "author" : [ "_:genid2147483654", "_:genid2147483648", "_:genid2147483652", "_:genid2147483650" ],
     "description" : {
       "en" : "An ontology to model environments, components, affordances, instructions, workflows, and actions related to robotic task execution."
@@ -22,12 +22,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483650",
+        "value" : "_:genid2147483652",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483652",
+        "value" : "_:genid2147483654",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -37,13 +37,13 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483654",
+        "value" : "_:genid2147483650",
         "type" : "label"
       } ],
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "2025-05-16",
+        "value" : "2025-07-28",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -52,16 +52,16 @@
         "value" : "obot",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "1.0.0",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://w3id.org/onto-bot#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "2.0.0",
         "type" : "label"
       } ],
       "title" : [ {
@@ -77,55 +77,91 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "3",
     "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "3",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
+    "iri" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+    "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalTask"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/onto-bot#TargetLocation",
+    "baseIri" : "https://w3id.org/onto-bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TargetLocation",
+      "en" : "Target Location"
+    },
+    "comment" : {
+      "en" : "The target location of a component within the environment, which can be different from its current location."
+    },
+    "id" : "3"
+  }, {
     "iri" : "http://schema.org/PropertyValue",
     "baseIri" : "http://schema.org",
     "instances" : 0,
@@ -133,7 +169,7 @@
       "IRI-based" : "PropertyValue"
     },
     "attributes" : [ "external" ],
-    "id" : "0"
+    "id" : "6"
   }, {
     "iri" : "https://w3id.org/onto-bot#Affordance",
     "baseIri" : "https://w3id.org/onto-bot",
@@ -142,101 +178,21 @@
       "IRI-based" : "Affordance",
       "en" : "Affordance"
     },
-    "individuals" : [ {
-      "iri" : "http://www.ease-crc.org/ont/SOMA.owl#Pushing",
-      "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-      "comment" : {
-        "en" : "Pushing is an affordance that enables a component to be pushed."
-      },
-      "labels" : {
-        "IRI-based" : "Pushing",
-        "en" : "Pushing"
-      }
-    }, {
-      "iri" : "http://www.ease-crc.org/ont/SOMA.owl#PuttingDown",
-      "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-      "comment" : {
-        "en" : "Putting down is an affordance that enables a component to be put down."
-      },
-      "labels" : {
-        "IRI-based" : "PuttingDown",
-        "en" : "PuttingDown"
-      }
-    }, {
-      "iri" : "http://www.ease-crc.org/ont/SOMA.owl#Delivering",
-      "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-      "comment" : {
-        "en" : "Delivering is an affordance that enables a component to be delivered."
-      },
-      "labels" : {
-        "IRI-based" : "Delivering",
-        "en" : "Delivering"
-      }
-    }, {
-      "iri" : "http://www.ease-crc.org/ont/SOMA.owl#Holding",
-      "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-      "comment" : {
-        "en" : "Holding is an affordance that enables a component to be held."
-      },
-      "labels" : {
-        "IRI-based" : "Holding",
-        "en" : "Holding"
-      }
-    }, {
-      "iri" : "http://www.ease-crc.org/ont/SOMA.owl#Pulling",
-      "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-      "comment" : {
-        "en" : "Pulling is an affordance that enables a component to be pulled."
-      },
-      "labels" : {
-        "IRI-based" : "Pulling",
-        "en" : "Pulling"
-      }
-    }, {
-      "iri" : "http://www.ease-crc.org/ont/SOMA.owl#Grasping",
-      "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-      "comment" : {
-        "en" : "Grasping is an affordance that enables a component to be grasped."
-      },
-      "labels" : {
-        "IRI-based" : "Grasping",
-        "en" : "Grasping"
-      }
-    }, {
-      "iri" : "http://www.ease-crc.org/ont/SOMA.owl#Closing",
-      "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-      "comment" : {
-        "en" : "Closing is an affordance that enables a component to be closed."
-      },
-      "labels" : {
-        "IRI-based" : "Closing",
-        "en" : "Closing"
-      }
-    }, {
-      "iri" : "http://www.ease-crc.org/ont/SOMA.owl#PickingUp",
-      "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-      "comment" : {
-        "en" : "Picking up is an affordance that enables a component to be picked up."
-      },
-      "labels" : {
-        "IRI-based" : "PickingUp",
-        "en" : "PickingUp"
-      }
-    }, {
-      "iri" : "http://www.ease-crc.org/ont/SOMA.owl#Opening",
-      "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-      "comment" : {
-        "en" : "Opening is an affordance that enables a component to be opened."
-      },
-      "labels" : {
-        "IRI-based" : "Opening",
-        "en" : "Opening"
-      }
-    } ],
     "comment" : {
       "en" : "An affordance is a property of an object that indicates how it can be used."
     },
-    "id" : "4"
+    "id" : "8",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
   }, {
     "iri" : "https://w3id.org/onto-bot#Component",
     "baseIri" : "https://w3id.org/onto-bot",
@@ -245,41 +201,11 @@
       "IRI-based" : "Component",
       "en" : "Component"
     },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/onto-bot#Object",
-      "baseIri" : "https://w3id.org/onto-bot",
-      "comment" : {
-        "en" : "An object is a type of component."
-      },
-      "labels" : {
-        "IRI-based" : "Object",
-        "en" : "Object"
-      }
-    }, {
-      "iri" : "https://w3id.org/onto-bot#Furniture",
-      "baseIri" : "https://w3id.org/onto-bot",
-      "comment" : {
-        "en" : "A furniture is a type of component."
-      },
-      "labels" : {
-        "IRI-based" : "Furniture",
-        "en" : "Furniture"
-      }
-    }, {
-      "iri" : "https://w3id.org/onto-bot#Appliance",
-      "baseIri" : "https://w3id.org/onto-bot",
-      "comment" : {
-        "en" : "An appliance is a type of component."
-      },
-      "labels" : {
-        "IRI-based" : "Appliance",
-        "en" : "Appliance"
-      }
-    } ],
     "comment" : {
       "en" : "A component is a part of an environment that can be used to perform tasks or actions."
     },
-    "id" : "15"
+    "id" : "15",
+    "superClasses" : [ "16" ]
   }, {
     "iri" : "https://w3id.org/onto-bot#Environment",
     "baseIri" : "https://w3id.org/onto-bot",
@@ -289,107 +215,47 @@
       "en" : "Environment"
     },
     "comment" : {
-      "en" : "An environment is an area or context in which components are found."
+      "en" : "An environment is a space where components are located and actions can be performed."
     },
-    "id" : "14"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "18",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "https://w3id.org/onto-bot#Instruction",
-    "baseIri" : "https://w3id.org/onto-bot",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Instruction",
-      "en" : "Instruction"
-    },
-    "comment" : {
-      "en" : "An instruction is a command or directive given to a robot."
-    },
-    "id" : "8"
+    "id" : "20",
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "instances" : 8,
+    "instances" : 1,
     "label" : {
       "IRI-based" : "Entity"
     },
     "attributes" : [ "external" ],
-    "id" : "2"
+    "id" : "25"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "27",
     "label" : {
-      "IRI-based" : "string"
+      "undefined" : "Thing"
     }
   }, {
-    "iri" : "https://w3id.org/onto-bot#Workflow",
+    "iri" : "https://w3id.org/onto-bot#CurrentLocation",
     "baseIri" : "https://w3id.org/onto-bot",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Workflow",
-      "en" : "Workflow"
+      "IRI-based" : "CurrentLocation",
+      "en" : "Current Location"
     },
     "comment" : {
-      "en" : "A workflow is a sequence of tasks or processes that are carried out to fulfil the instruction."
+      "en" : "The current location of a component within the environment."
     },
-    "id" : "6",
-    "superClasses" : [ "20" ]
+    "id" : "34"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "iri" : "https://w3id.org/pko#Action",
+    "baseIri" : "https://w3id.org/pko",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Workflow"
+      "IRI-based" : "Action"
     },
-    "subClasses" : [ "6" ],
     "attributes" : [ "external" ],
-    "id" : "20"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Property",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Property"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.opengis.net/ont/geosparql#sfOverlaps",
-      "baseIri" : "http://www.opengis.net/ont/geosparql",
-      "comment" : {
-        "en" : "The location of a component can overlaps with another component."
-      },
-      "labels" : {
-        "IRI-based" : "sfOverlaps",
-        "en" : "overlaps"
-      }
-    }, {
-      "iri" : "http://www.opengis.net/ont/geosparql#sfWithin",
-      "baseIri" : "http://www.opengis.net/ont/geosparql",
-      "comment" : {
-        "en" : "The location of a component can be within another component."
-      },
-      "labels" : {
-        "IRI-based" : "sfWithin",
-        "en" : "is within"
-      }
-    }, {
-      "iri" : "http://www.opengis.net/ont/geosparql#sfContains",
-      "baseIri" : "http://www.opengis.net/ont/geosparql",
-      "comment" : {
-        "en" : "The location of a component can be contained in another component."
-      },
-      "labels" : {
-        "IRI-based" : "sfContains",
-        "en" : "contains"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "30"
+    "id" : "31"
   }, {
     "iri" : "http://schema.org/Organization",
     "baseIri" : "http://schema.org",
@@ -398,7 +264,7 @@
       "IRI-based" : "Organization"
     },
     "attributes" : [ "external" ],
-    "id" : "32"
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/onto-bot#Location",
     "baseIri" : "https://w3id.org/onto-bot",
@@ -406,67 +272,79 @@
     "label" : {
       "IRI-based" : "Location"
     },
-    "id" : "25"
+    "id" : "2"
   }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Action",
-      "en" : "Action"
+      "IRI-based" : "PhysicalObject"
     },
-    "comment" : {
-      "en" : "An action is an atomic, single, clear action that is carried out to fulfil the instruction."
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://data.mksmart.org/onto-ros/class#Capability",
+    "baseIri" : "http://data.mksmart.org/onto-ros/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Capability"
     },
     "attributes" : [ "external" ],
-    "id" : "3"
+    "id" : "5"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Space",
+    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Space"
+    },
+    "subClasses" : [ "20" ],
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.ease-crc.org/ont/SOMA.owl#Affordance",
+    "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Affordance"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/onto-bot#Agent",
+    "baseIri" : "https://w3id.org/onto-bot",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Agent",
       "en" : "Agent"
     },
     "comment" : {
-      "en" : "An agent performing an action."
+      "en" : "An agent is an entity that is in an environment."
     },
-    "attributes" : [ "external" ],
-    "id" : "12"
+    "id" : "11",
+    "superClasses" : [ "18", "12", "24" ]
   }, {
-    "iri" : "http://www.ease-crc.org/ont/SOMA.owl#Location",
-    "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Location",
-      "en" : "Location"
+      "IRI-based" : "Agent"
     },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/onto-bot#CurrentLocation",
-      "baseIri" : "https://w3id.org/onto-bot",
-      "comment" : {
-        "en" : "The current location of a component within the environment."
-      },
-      "labels" : {
-        "IRI-based" : "CurrentLocation",
-        "en" : "Current Location"
-      }
-    }, {
-      "iri" : "https://w3id.org/onto-bot#StandardLocation",
-      "baseIri" : "https://w3id.org/onto-bot",
-      "comment" : {
-        "en" : "The location where a component is intended or supposed to be located, which can be different to its current location."
-      },
-      "labels" : {
-        "IRI-based" : "StandardLocation",
-        "en" : "Standard Location"
-      }
-    } ],
-    "comment" : {
-      "en" : "A location of a specific component within the environment."
-    },
+    "subClasses" : [ "11" ],
     "attributes" : [ "external" ],
-    "id" : "10"
+    "id" : "24"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -475,165 +353,168 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "42"
+    "id" : "39"
+  }, {
+    "iri" : "http://data.mksmart.org/onto-ros/class#Node",
+    "baseIri" : "http://data.mksmart.org/onto-ros/class",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Node"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36"
   } ],
   "property" : [ {
     "id" : "1",
-    "type" : "rdf:Property"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "5",
-    "type" : "rdf:Property"
+    "id" : "4",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "7",
-    "type" : "rdf:Property"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "9",
-    "type" : "rdf:Property"
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "11",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "13",
-    "type" : "rdf:Property"
-  }, {
-    "id" : "16",
-    "type" : "rdf:Property"
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "17",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "21",
-    "type" : "rdf:Property"
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "22",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "23",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "24",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "27",
-    "type" : "owl:objectProperty"
+    "type" : "rdf:Property"
   }, {
     "id" : "28",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "29",
-    "type" : "owl:datatypeProperty"
+    "id" : "30",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "31",
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
     "type" : "owl:objectProperty"
   }, {
     "id" : "33",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "34",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "36",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "37",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "38",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "40",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "41",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "39",
+    "id" : "9",
     "type" : "owl:objectProperty"
   }, {
     "id" : "35",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "domain" : "2",
+    "iri" : "https://w3id.org/onto-bot#hasTargetLocation",
+    "baseIri" : "https://w3id.org/onto-bot",
     "range" : "3",
-    "id" : "1",
     "label" : {
-      "IRI-based" : "2",
-      "undefined" : "is a"
-    }
-  }, {
-    "domain" : "2",
-    "range" : "6",
-    "id" : "5",
-    "label" : {
-      "IRI-based" : "3",
-      "undefined" : "is a"
-    }
-  }, {
-    "domain" : "2",
-    "range" : "8",
-    "id" : "7",
-    "label" : {
-      "IRI-based" : "4",
-      "undefined" : "is a"
-    }
-  }, {
-    "domain" : "2",
-    "range" : "10",
-    "id" : "9",
-    "label" : {
-      "IRI-based" : "5",
-      "undefined" : "is a"
-    }
-  }, {
-    "domain" : "2",
-    "range" : "12",
-    "id" : "11",
-    "label" : {
-      "IRI-based" : "6",
-      "undefined" : "is a"
-    }
-  }, {
-    "domain" : "2",
-    "range" : "14",
-    "id" : "13",
-    "label" : {
-      "IRI-based" : "7",
-      "undefined" : "is a"
-    }
-  }, {
-    "domain" : "2",
-    "range" : "15",
-    "id" : "16",
-    "label" : {
-      "IRI-based" : "8",
-      "undefined" : "is a"
-    }
-  }, {
-    "iri" : "http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy",
-    "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
-    "range" : "12",
-    "label" : {
-      "IRI-based" : "isPerformedBy",
-      "en" : "is performed by"
+      "IRI-based" : "hasTargetLocation",
+      "en" : "has target location"
     },
-    "domain" : "3",
+    "domain" : "2",
     "comment" : {
-      "en" : "An action is performed by an agent."
+      "en" : "A component has a target location within the environment, which can be different from its current location."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/onto-bot#enablesTask",
+    "baseIri" : "https://w3id.org/onto-bot",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "enablesTask",
+      "en" : "enables task"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "A robot capability enables a physical task to be performed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/onto-bot#isEnabledBy",
+    "baseIri" : "https://w3id.org/onto-bot",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isEnabledBy",
+      "en" : "is enabled by"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "0",
+    "comment" : {
+      "en" : "A physical task is enabled by an affordance."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "18",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "17"
   }, {
-    "domain" : "2",
-    "range" : "4",
-    "id" : "21",
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "13",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "24",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "domain" : "25",
+    "range" : "8",
+    "id" : "26",
     "label" : {
-      "IRI-based" : "1",
+      "IRI-based" : "0",
       "undefined" : "is a"
     }
+  }, {
+    "iri" : "https://w3id.org/onto-bot#hasComponent",
+    "baseIri" : "https://w3id.org/onto-bot",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasComponent",
+      "en" : "has component"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "20",
+    "comment" : {
+      "en" : "An environment has one or more components."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
   }, {
     "iri" : "https://w3id.org/onto-bot#actsOn",
     "baseIri" : "https://w3id.org/onto-bot",
@@ -642,114 +523,80 @@
       "IRI-based" : "actsOn",
       "en" : "acts on"
     },
-    "domain" : "3",
+    "domain" : "31",
     "comment" : {
       "en" : "An action acts on a component."
     },
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "30"
   }, {
-    "iri" : "https://w3id.org/onto-bot#hasAction",
+    "iri" : "https://w3id.org/onto-bot#requiresTask",
     "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "3",
+    "range" : "0",
     "label" : {
-      "IRI-based" : "hasAction",
-      "en" : "has action"
+      "IRI-based" : "requiresTask",
+      "en" : "requires task"
     },
-    "domain" : "6",
+    "domain" : "31",
     "comment" : {
-      "en" : "A workflow has one or multiple clear atomic actions."
+      "en" : "An action requires a physical task to be performed."
     },
     "attributes" : [ "object" ],
-    "id" : "23"
-  }, {
-    "iri" : "https://w3id.org/onto-bot#onTopOf",
-    "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "onTopOf",
-      "en" : "on top of"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "The location of component can be on top of another component."
-    },
-    "attributes" : [ "object" ],
-    "id" : "24"
+    "id" : "32"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "15",
+    "range" : "27",
     "label" : {
-      "IRI-based" : "hasComponent",
-      "en" : "has component"
+      "IRI-based" : "hasComponent"
     },
-    "domain" : "14",
-    "comment" : {
-      "en" : "An environment has one or more components."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "26"
-  }, {
-    "iri" : "http://www.opengis.net/ont/geosparql#sfContains",
-    "baseIri" : "http://www.opengis.net/ont/geosparql",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "sfContains",
-      "en" : "contains"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "The location of a component can be contained in another component."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "27"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "hasLocation",
-      "en" : "has location"
-    },
-    "domain" : "15",
-    "comment" : {
-      "en" : "A component has a location within the environment, which can refer to another component."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "28"
-  }, {
-    "iri" : "https://w3id.org/onto-bot#:hasNaturalLanguage",
-    "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : ":hasNaturalLanguage",
-      "en" : "has natural language"
-    },
-    "domain" : "8",
-    "comment" : {
-      "en" : "The instruction is expressed in a natural language."
-    },
-    "attributes" : [ "datatype" ],
+    "domain" : "27",
+    "subproperty" : [ "28" ],
+    "attributes" : [ "external", "object" ],
     "id" : "29"
   }, {
-    "iri" : "https://w3id.org/onto-bot#isAffordedBy",
+    "iri" : "https://w3id.org/onto-bot#hasCurrentLocation",
     "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "4",
+    "range" : "34",
     "label" : {
-      "IRI-based" : "isAffordedBy",
-      "en" : "is afforded by"
+      "IRI-based" : "hasCurrentLocation",
+      "en" : "has current location"
     },
-    "domain" : "3",
+    "domain" : "2",
     "comment" : {
-      "en" : "An action is afforded by an affordance."
+      "en" : "A component has a current location within the environment."
     },
     "attributes" : [ "object" ],
-    "id" : "31"
+    "id" : "33"
+  }, {
+    "iri" : "http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance",
+    "baseIri" : "http://www.ease-crc.org/ont/SOMA.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isTaskDefinedInAffordance"
+    },
+    "domain" : "27",
+    "subproperty" : [ "7" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/onto-bot#hasNode",
+    "baseIri" : "https://w3id.org/onto-bot",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasNode",
+      "en" : "has node"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "An agent has a ROS node that allows it to interact with the ROS ecosystem."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
   }, {
     "iri" : "https://w3id.org/onto-bot#hasAffordance",
     "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "4",
+    "range" : "8",
     "label" : {
       "IRI-based" : "hasAffordance",
       "en" : "has affordance"
@@ -759,105 +606,6 @@
       "en" : "A component has one or more affordances that indicate how it can be used."
     },
     "attributes" : [ "object" ],
-    "id" : "33"
-  }, {
-    "iri" : "https://w3id.org/onto-bot#precedes",
-    "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "precedes",
-      "undefined" : "precedes"
-    },
-    "superproperty" : [ "35" ],
-    "domain" : "3",
-    "comment" : {
-      "en" : "An action can precede another action."
-    },
-    "attributes" : [ "object" ],
-    "id" : "34"
-  }, {
-    "iri" : "https://w3id.org/onto-bot#hasWorkflow",
-    "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "hasWorkflow",
-      "en" : "has workflow"
-    },
-    "domain" : "8",
-    "comment" : {
-      "en" : "An instruction has a workflow that needs to be executed."
-    },
-    "attributes" : [ "object" ],
-    "id" : "36"
-  }, {
-    "iri" : "http://www.opengis.net/ont/geosparql#sfOverlaps",
-    "baseIri" : "http://www.opengis.net/ont/geosparql",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "sfOverlaps",
-      "en" : "overlaps"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "The location of a component can overlaps with another component."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "37"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "follows"
-    },
-    "domain" : "18",
-    "subproperty" : [ "39" ],
-    "attributes" : [ "object", "external" ],
     "id" : "38"
-  }, {
-    "iri" : "http://www.opengis.net/ont/geosparql#sfWithin",
-    "baseIri" : "http://www.opengis.net/ont/geosparql",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "sfWithin",
-      "en" : "is within"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "The location of a component can be within another component."
-    },
-    "attributes" : [ "object", "external" ],
-    "id" : "40"
-  }, {
-    "range" : "20",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "41"
-  }, {
-    "iri" : "https://w3id.org/onto-bot#follows",
-    "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "3",
-    "label" : {
-      "IRI-based" : "follows",
-      "undefined" : "follow"
-    },
-    "superproperty" : [ "38" ],
-    "domain" : "3",
-    "comment" : {
-      "en" : "An action can follow another action."
-    },
-    "attributes" : [ "object" ],
-    "id" : "39"
-  }, {
-    "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes",
-    "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "precedes"
-    },
-    "domain" : "18",
-    "subproperty" : [ "34" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "35"
   } ]
 }

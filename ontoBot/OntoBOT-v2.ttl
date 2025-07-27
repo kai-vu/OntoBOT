@@ -1,0 +1,158 @@
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix dc:     <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix geo:    <http://www.opengis.net/ont/geosparql#> .
+@prefix soma:   <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix dul:    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix obot:   <https://w3id.org/onto-bot#> .
+@prefix ros:    <http://data.mksmart.org/onto-ros/class#> .
+@prefix pko:    <https://w3id.org/pko#> .
+
+
+###################################
+# ONTOLOGY METADATA
+###################################
+
+<https://w3id.org/onto-bot#> a owl:Ontology ;
+    dc:title "Ontology for roBOts and acTions"@en ;
+    dc:description "An ontology to model environments, components, affordances, instructions, workflows, and actions related to robotic task execution."@en ;
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Margherita Martorana" ;
+        foaf:mbox "m.martorana@vu.nl" ;
+        schema:identifier [
+            a schema:PropertyValue ;
+            schema:propertyID "ORCID" ;
+            schema:value "0000-0001-8004-0464" ;
+            foaf:member _:org 
+        ]], [
+        a foaf:Person ;
+        foaf:name "Francesca Urgese" ;
+        schema:identifier [
+            a schema:PropertyValue ;
+            schema:propertyID "ORCID" ;
+            schema:value "" ;
+            foaf:member _:org 
+        ]], [
+        a foaf:Person ;
+        foaf:name "Mark Adamik" ;
+        schema:identifier [
+            a schema:PropertyValue ;
+            schema:propertyID "ORCID" ;
+            schema:value "" ;
+            foaf:member _:org 
+        ]], [
+        a foaf:Person ;
+        foaf:name "Ilaria Tiddi" ;
+        schema:identifier [
+            a schema:PropertyValue ;
+            schema:propertyID "ORCID" ;
+            schema:value "" ;
+            foaf:member _:org  
+        ]] ;
+    dcterms:created "2025-07-28"^^xsd:date ;
+    owl:versionInfo "2.0.0" ;
+    dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "obot";
+    vann:preferredNamespaceUri "https://w3id.org/onto-bot#" .
+
+_:org a schema:Organization ;
+    schema:name "Knowledge & AI Group - Vrije Universiteit Amsterdam" .
+
+###################################
+# CLASSES
+###################################
+
+<https://w3id.org/onto-bot#Agent> a owl:Class;
+    rdfs:label "Agent"@en ;
+    rdfs:comment "An agent is an entity that is in an environment."@en ;
+    rdfs:subClassOf prov:Agent, dul:Agent, foaf:Agent .
+
+<https://w3id.org/onto-bot#Environment> a owl:Class ;
+    rdfs:label "Environment"@en ;
+    rdfs:comment "An environment is a space where components are located and actions can be performed."@en ;
+    rdfs:subClassOf dul:Space .
+
+<https://w3id.org/onto-bot#Component> a owl:Class ;
+    rdfs:label "Component"@en ;
+    rdfs:comment "A component is a part of an environment that can be used to perform tasks or actions."@en ;
+    rdfs:subClassOf dul:PhysicalObject .
+
+<https://w3id.org/onto-bot#CurrentLocation> a owl:Class ;
+    rdfs:label "Current Location"@en ;
+    rdfs:comment "The current location of a component within the environment."@en .
+
+<https://w3id.org/onto-bot#TargetLocation> a owl:Class ;
+    rdfs:label "Target Location"@en ;
+    rdfs:comment "The target location of a component within the environment, which can be different from its current location."@en .
+
+<https://w3id.org/onto-bot#Affordance> a owl:Class, dul:Entity ;
+    rdfs:label "Affordance"@en ;
+    rdfs:comment "An affordance is a property of an object that indicates how it can be used."@en ;
+    rdfs:subClassOf soma:Affordance .
+
+###################################
+# OBJECT PROPERTIES
+###################################
+
+<https://w3id.org/onto-bot#hasNode> a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/onto-bot#Agent> ;
+    rdfs:range ros:Node ;
+    rdfs:label "has node"@en ;
+    rdfs:comment "An agent has a ROS node that allows it to interact with the ROS ecosystem."@en .
+
+<https://w3id.org/onto-bot#actsOn> a owl:ObjectProperty ;
+    rdfs:domain pko:Action ;
+    rdfs:range <https://w3id.org/onto-bot#Component> ;
+    rdfs:label "acts on"@en ;
+    rdfs:comment "An action acts on a component."@en .
+
+<https://w3id.org/onto-bot#requiresTask> a owl:ObjectProperty ;
+    rdfs:domain pko:Action ;
+    rdfs:range soma:PhysicalTask ;
+    rdfs:label "requires task"@en ;
+    rdfs:comment "An action requires a physical task to be performed."@en .
+
+<https://w3id.org/onto-bot#enablesTask> a owl:ObjectProperty ;
+    rdfs:domain ros:Capability ;
+    rdfs:range soma:PhysicalTask ;
+    rdfs:label "enables task"@en ;
+    rdfs:comment "A robot capability enables a physical task to be performed."@en .
+
+<https://w3id.org/onto-bot#isEnabledBy> a owl:ObjectProperty ;
+    rdfs:domain soma:PhysicalTask ;
+    rdfs:range <https://w3id.org/onto-bot#Affordance> ; 
+    rdfs:label "is enabled by"@en ;
+    rdfs:comment "A physical task is enabled by an affordance."@en ;
+    rdfs:subPropertyOf soma:isTaskDefinedInAffordance.
+
+<https://w3id.org/onto-bot#hasAffordance> a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/onto-bot#Component> ;
+    rdfs:range <https://w3id.org/onto-bot#Affordance> ;
+    rdfs:label "has affordance"@en ;
+    rdfs:comment "A component has one or more affordances that indicate how it can be used."@en .
+
+<https://w3id.org/onto-bot#hasComponent> a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/onto-bot#Environment> ;
+    rdfs:range <https://w3id.org/onto-bot#Component> ;
+    rdfs:label "has component"@en ;
+    rdfs:comment "An environment has one or more components."@en ;
+    rdfs:subPropertyOf dul:hasComponent .
+
+<https://w3id.org/onto-bot#hasCurrentLocation> a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/onto-bot#Location> ;
+    rdfs:range <https://w3id.org/onto-bot#CurrentLocation> ;
+    rdfs:label "has current location"@en ;
+    rdfs:comment "A component has a current location within the environment."@en .
+
+<https://w3id.org/onto-bot#hasTargetLocation> a owl:ObjectProperty ;
+    rdfs:domain <https://w3id.org/onto-bot#Location> ;
+    rdfs:range <https://w3id.org/onto-bot#TargetLocation> ;
+    rdfs:label "has target location"@en ;
+    rdfs:comment "A component has a target location within the environment, which can be different from its current location."@en .

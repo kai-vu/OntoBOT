@@ -110,6 +110,12 @@
     "@id" : "_:genid3"
   } ]
 }, {
+  "@id" : "http://data.mksmart.org/onto-ros/class#Capability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://data.mksmart.org/onto-ros/class#Node",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -149,301 +155,37 @@
   "@id" : "http://schema.org/value",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Closing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Closing is an affordance that enables a component to be closed."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Closing"
-  } ]
+  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Affordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Delivering",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Delivering is an affordance that enables a component to be delivered."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Delivering"
-  } ]
+  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Grasping",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Grasping is an affordance that enables a component to be grasped."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Grasping"
-  } ]
-}, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Holding",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Holding is an affordance that enables a component to be held."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Holding"
-  } ]
-}, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A location of a specific component within the environment."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Location"
-  } ]
-}, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Opening",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Opening is an affordance that enables a component to be opened."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Opening"
-  } ]
-}, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PickingUp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Picking up is an affordance that enables a component to be picked up."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "PickingUp"
-  } ]
-}, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Pulling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Pulling is an affordance that enables a component to be pulled."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Pulling"
-  } ]
-}, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Pushing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Pushing is an affordance that enables a component to be pushed."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Pushing"
-  } ]
-}, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PuttingDown",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Putting down is an affordance that enables a component to be put down."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "PuttingDown"
-  } ]
-}, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An action is performed by an agent."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is performed by"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
-  } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An action is an atomic, single, clear action that is carried out to fulfil the instruction."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Action"
-  } ]
+  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An agent performing an action."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Agent"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow",
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An environment has one or more components."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/onto-bot#Environment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has component"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/onto-bot#Component"
-  } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A component has a location within the environment, which can refer to another component."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/onto-bot#Component"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/onto-bot#Location"
-  } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Property"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The location of a component can be contained in another component."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/onto-bot#Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "contains"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/onto-bot#Component"
-  } ]
-}, {
-  "@id" : "http://www.opengis.net/ont/geosparql#sfOverlaps",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Property"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The location of a component can overlaps with another component."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/onto-bot#Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "overlaps"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/onto-bot#Component"
-  } ]
-}, {
-  "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Property"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The location of a component can be within another component."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/onto-bot#Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is within"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/onto-bot#Component"
-  } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
-  "@id" : "http://www.w3.org/2002/07/owl#Property",
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",
@@ -482,7 +224,7 @@
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-05-16"
+    "@value" : "2025-07-28"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "obot"
@@ -491,24 +233,7 @@
     "@value" : "https://w3id.org/onto-bot#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0.0"
-  } ]
-}, {
-  "@id" : "https://w3id.org/onto-bot#:hasNaturalLanguage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The instruction is expressed in a natural language."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/onto-bot#Instruction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has natural language"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@value" : "2.0.0"
   } ]
 }, {
   "@id" : "https://w3id.org/onto-bot#Affordance",
@@ -523,27 +248,31 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Affordance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Affordance"
   } ]
 }, {
-  "@id" : "https://w3id.org/onto-bot#Appliance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Component"
-  } ],
+  "@id" : "https://w3id.org/onto-bot#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An appliance is a type of component."
+    "@value" : "An agent is an entity that is in an environment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Appliance"
+    "@value" : "Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
   } ]
 }, {
   "@id" : "https://w3id.org/onto-bot#Component",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A component is a part of an environment that can be used to perform tasks or actions."
@@ -551,13 +280,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"
   } ]
 }, {
   "@id" : "https://w3id.org/onto-bot#CurrentLocation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Location"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The current location of a component within the environment."
@@ -568,93 +297,31 @@
   } ]
 }, {
   "@id" : "https://w3id.org/onto-bot#Environment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An environment is an area or context in which components are found."
+    "@value" : "An environment is a space where components are located and actions can be performed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Environment"
-  } ]
-}, {
-  "@id" : "https://w3id.org/onto-bot#Furniture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Component"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A furniture is a type of component."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Furniture"
-  } ]
-}, {
-  "@id" : "https://w3id.org/onto-bot#Instruction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An instruction is a command or directive given to a robot."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Instruction"
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Space"
   } ]
 }, {
   "@id" : "https://w3id.org/onto-bot#Location",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/onto-bot#Object",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/onto-bot#Component"
-  } ],
+  "@id" : "https://w3id.org/onto-bot#TargetLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An object is a type of component."
+    "@value" : "The target location of a component within the environment, which can be different from its current location."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Object"
-  } ]
-}, {
-  "@id" : "https://w3id.org/onto-bot#StandardLocation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The location where a component is intended or supposed to be located, which can be different to its current location."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Standard Location"
-  } ]
-}, {
-  "@id" : "https://w3id.org/onto-bot#Workflow",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A workflow is a sequence of tasks or processes that are carried out to fulfil the instruction."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Workflow"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Workflow"
+    "@value" : "Target Location"
   } ]
 }, {
   "@id" : "https://w3id.org/onto-bot#actsOn",
@@ -664,7 +331,7 @@
     "@value" : "An action acts on a component."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
+    "@id" : "https://w3id.org/pko#Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -674,40 +341,21 @@
     "@id" : "https://w3id.org/onto-bot#Component"
   } ]
 }, {
-  "@id" : "https://w3id.org/onto-bot#follows",
+  "@id" : "https://w3id.org/onto-bot#enablesTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An action can follow another action."
+    "@value" : "A robot capability enables a physical task to be performed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "follow"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows"
-  } ]
-}, {
-  "@id" : "https://w3id.org/onto-bot#hasAction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A workflow has one or multiple clear atomic actions."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/onto-bot#Workflow"
+    "@id" : "http://data.mksmart.org/onto-ros/class#Capability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has action"
+    "@value" : "enables task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
+    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"
   } ]
 }, {
   "@id" : "https://w3id.org/onto-bot#hasAffordance",
@@ -727,73 +375,114 @@
     "@id" : "https://w3id.org/onto-bot#Affordance"
   } ]
 }, {
-  "@id" : "https://w3id.org/onto-bot#hasWorkflow",
+  "@id" : "https://w3id.org/onto-bot#hasComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An instruction has a workflow that needs to be executed."
+    "@value" : "An environment has one or more components."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/onto-bot#Instruction"
+    "@id" : "https://w3id.org/onto-bot#Environment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has workflow"
+    "@value" : "has component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/onto-bot#Workflow"
+    "@id" : "https://w3id.org/onto-bot#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/onto-bot#isAffordedBy",
+  "@id" : "https://w3id.org/onto-bot#hasCurrentLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An action is afforded by an affordance."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is afforded by"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ]
-}, {
-  "@id" : "https://w3id.org/onto-bot#onTopOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The location of component can be on top of another component."
+    "@value" : "A component has a current location within the environment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/onto-bot#Location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "on top of"
+    "@value" : "has current location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/onto-bot#Component"
+    "@id" : "https://w3id.org/onto-bot#CurrentLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/onto-bot#precedes",
+  "@id" : "https://w3id.org/onto-bot#hasNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An action can precede another action."
+    "@value" : "An agent has a ROS node that allows it to interact with the ROS ecosystem."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
+    "@id" : "https://w3id.org/onto-bot#Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "precedes"
+    "@language" : "en",
+    "@value" : "has node"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
+    "@id" : "http://data.mksmart.org/onto-ros/class#Node"
+  } ]
+}, {
+  "@id" : "https://w3id.org/onto-bot#hasTargetLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A component has a target location within the environment, which can be different from its current location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/onto-bot#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has target location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/onto-bot#TargetLocation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/onto-bot#isEnabledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A physical task is enabled by an affordance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is enabled by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/onto-bot#Affordance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#precedes"
+    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance"
   } ]
+}, {
+  "@id" : "https://w3id.org/onto-bot#requiresTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An action requires a physical task to be performed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pko#Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "requires task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pko#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 } ]
