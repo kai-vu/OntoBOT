@@ -1,5 +1,7 @@
 @prefix :       <https://example.org/> .
 @prefix obot:   <https://w3id.org/onto-bot#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix soma:   <http://www.ease-crc.org/ont/SOMA.owl#> .
 
 ###################################
 # ENVIRONMENT

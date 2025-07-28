@@ -1,0 +1,82 @@
+@prefix :       <https://example.org/> .
+@prefix obot:   <https://w3id.org/onto-bot#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix soma:   <http://www.ease-crc.org/ont/SOMA.owl#> .
+
+
+###################################
+# AGENT TIAGo
+###################################
+
+:tiagoRobot a obot:Agent ;
+    rdfs:label          "TIAGo Robot"@en ;
+    obot:hasNode        [
+        ros:communicatesThrough :tiagoCommunicationComponent ] .
+
+:tiagoCommunication a ros:ROSCommunication ;
+    ros:hasComponent :tiagoCommunicationComponent ;
+    ros:hasMessage [
+        ros:evokes [
+            obot:enablesAffordance soma:Grasping, soma:Holding, soma:Opening, soma:Closing, 
+                                    soma:Pouring, soma:Placing, soma:PuttingDown ;
+        ]
+    ] .
+
+
+###################################
+# AGENT UR3
+###################################
+
+:ur3Robot a obot:Agent ;
+    rdfs:label          "UR3 Robot"@en ;
+    obot:hasNode        [
+        ros:communicatesThrough :ur3CommunicationComponent ] .  
+
+:ur3Communication a ros:ROSCommunication ;
+    ros:hasComponent :ur3CommunicationComponent ;
+    ros:hasMessage [
+        ros:evokes [
+            obot:enablesAffordance soma:Grasping, soma:Holding, 
+                                    soma:Pouring, soma:Placing, soma:PuttingDown ;
+        ]
+    ] .
+
+
+###################################
+# AGENT Stretch
+###################################
+
+:stretchRobot a obot:Agent ;
+    rdfs:label          "Stretch Robot"@en ;
+    obot:hasNode        [
+        ros:communicatesThrough :stretchCommunicationComponent ] .      
+
+:stretchCommunication a ros:ROSCommunication ;
+    ros:hasComponent :stretchCommunicationComponent ;
+    ros:hasMessage [
+        ros:evokes [
+            obot:enablesAffordance soma:Grasping, soma:Opening, soma:Closing, 
+                                    soma:Placing, soma:PuttingDown ;
+        ]
+    ] .     
+
+
+###################################
+# AGENT HSR
+###################################
+
+:hsrRobot a obot:Agent ;
+    rdfs:label          "HSR Robot"@en ;
+    obot:hasNode        [
+        ros:communicatesThrough :hsrCommunicationComponent ] . 
+
+:hsrCommunication a ros:ROSCommunication ;
+    ros:hasComponent :hsrCommunicationComponent ;
+    ros:hasMessage [
+        ros:evokes [
+            obot:enablesAffordance soma:Grasping, soma:Holding, soma:Opening, soma:Closing, 
+                                    soma:Placing, soma:PuttingDown ;
+        ]
+    ] . 
+
+    

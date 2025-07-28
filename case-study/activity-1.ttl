@@ -46,7 +46,7 @@
 :procedure1-step1-action2  a   pko:Action ;
                     rdfs:label              "Grasp the bowl" ;
                     obot:nextAction         :procedure1-step1-action3 ;
-                    obot:requiresAffordance soma:Grasping ;     
+                    obot:requiresAffordance soma:Grasping, soma:Holding ;     
                     obot:actsOn             :bowl .
 
 :procedure1-step1-action3  a   pko:Action ;
@@ -79,7 +79,7 @@
 :procedure1-step2-action2  a   pko:Action ;
                     rdfs:label              "Grasp the spoon" ;
                     obot:nextAction         :procedure1-step2-action3 ;
-                    obot:requiresAffordance soma:Grasping ;     
+                    obot:requiresAffordance soma:Grasping, soma:Holding ;     
                     obot:actsOn             :spoon .    
 
 :procedure1-step2-action3  a   pko:Action ;
@@ -112,7 +112,7 @@
 :procedure1-step3-action2  a   pko:Action ;
                     rdfs:label              "Grasp the glass" ;
                     obot:nextAction         :procedure1-step3-action3 ;
-                    obot:requiresAffordance soma:Grasping ;     
+                    obot:requiresAffordance soma:Grasping, soma:Holding ;     
                     obot:actsOn             :glass .    
 
 :procedure1-step3-action3  a   pko:Action ;
@@ -153,7 +153,7 @@
 :procedure2-step1-action2  a   pko:Action ;
                     rdfs:label              "Grasp the milk" ;
                     obot:nextAction         :procedure2-step1-action3 ;
-                    obot:requiresAffordance soma:Grasping ;     
+                    obot:requiresAffordance soma:Grasping, soma:Holding ;     
                     obot:actsOn             :milk .
 
 :procedure2-step1-action3  a   pko:Action ;
@@ -185,7 +185,7 @@
 :procedure2-step2-action2  a   pko:Action ;
                     rdfs:label              "Grasp the orange juice" ;
                     obot:nextAction         :procedure2-step2-action3 ;
-                    obot:requiresAffordance soma:Grasping ;     
+                    obot:requiresAffordance soma:Grasping, soma:Holding ;     
                     obot:actsOn             :orangeJuice .  
 
 :procedure2-step2-action3  a   pko:Action ;
@@ -217,7 +217,7 @@
 :procedure2-step3-action2  a   pko:Action ;
                     rdfs:label              "Grasp the cereal box" ;
                     obot:nextAction         :procedure2-step3-action3 ;
-                    obot:requiresAffordance soma:Grasping ;     
+                    obot:requiresAffordance soma:Grasping, soma:Holding ;     
                     obot:actsOn             :cerealBox .
 
 :procedure2-step3-action3  a   pko:Action ;
@@ -252,7 +252,7 @@
 :procedure3-step1-action1  a   pko:Action ;
                     rdfs:label              "Grasp the milk" ;
                     obot:nextAction         :procedure3-step1-action2 ;
-                    obot:requiresAffordance soma:Grasping ;
+                    obot:requiresAffordance soma:Grasping, soma:Holding ;
                     obot:actsOn             :milk .
 
 :procedure3-step1-action2  a   pko:Action ;
@@ -278,7 +278,7 @@
 :procedure3-step2-action1  a   pko:Action ;
                     rdfs:label              "Grasp the orange juice" ;
                     obot:nextAction         :procedure3-step2-action2 ;
-                    obot:requiresAffordance soma:Grasping ;
+                    obot:requiresAffordance soma:Grasping, soma:Holding ;
                     obot:actsOn             :orangeJuice .      
 
 :procedure3-step2-action2  a   pko:Action ;
@@ -303,7 +303,7 @@
 :procedure3-step3-action1  a   pko:Action ;
                     rdfs:label              "Grasp the cereal box" ;
                     obot:nextAction         :procedure3-step3-action2 ;
-                    obot:requiresAffordance soma:Grasping ;
+                    obot:requiresAffordance soma:Grasping, soma:Holding ;
                     obot:actsOn             :cerealBox .
 
 :procedure3-step3-action2  a   pko:Action ;
