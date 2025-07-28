@@ -309,6 +309,18 @@
     
 
 
+    <!-- https://w3id.org/onto-bot#nextAction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#nextAction">
+        <rdfs:domain rdf:resource="https://w3id.org/pko#Action"/>
+        <rdfs:range rdf:resource="https://w3id.org/pko#Action"/>
+        <rdfs:comment xml:lang="en">An action can lead to another action.</rdfs:comment>
+        <rdfs:label xml:lang="en">next action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/onto-bot#requiresAffordance -->
 
 

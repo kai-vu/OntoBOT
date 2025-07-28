@@ -1,0 +1,321 @@
+@prefix :       <https://example.org/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix pko:    <https://w3id.org/pko#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pplan:  <http://purl.org/net/p-plan#> .
+@prefix soma:   <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix obot:   <https://w3id.org/onto-bot#> .
+
+###################################
+# ACTIVITY 1
+###################################
+
+:Activity1  a	prov:Activity;
+				pko:hasUserQuestionOccurrence [
+						a pko:UserQuestionOccurrence ;
+						pko:wasAskedBy [
+								a prov:Agent , foaf:Person ] ;
+						rdfs:label "Prepare breakfast" ] ;
+				pko:wasExecutedBy prov:Agent ;
+				pko:executesProcedure :procedure1, :procedure2, :procedure3 .
+
+###################################
+# PROCEDURE 1
+###################################
+
+:procedure1     a   pko:Procedure ;
+                    rdfs:label "Retrieve tableware" ;
+                    pko:hasStep :procedure1-step1, :procedure1-step2, :procedure1-step3 .
+
+
+# STEP 1
+
+:procedure1-step1   a   pplan:Step ;
+                    rdfs:label              "Retrieve bowl" ;
+                    pko:requiresAction      :procedure1-step1-action1 , 
+                                            :procedure1-step1-action2 , 
+                                            :procedure1-step1-action3 , 
+                                            :procedure1-step1-action4 .
+
+:procedure1-step1-action1  a    pko:Action ;
+                    rdfs:label              "Open the cupboard" ;
+                    obot:nextAction         :procedure1-step1-action2 ;
+                    obot:requiresAffordance soma:Opening ;
+                    obot:actsOn             :tablewareCupboard .
+
+:procedure1-step1-action2  a   pko:Action ;
+                    rdfs:label              "Grasp the bowl" ;
+                    obot:nextAction         :procedure1-step1-action3 ;
+                    obot:requiresAffordance soma:Grasping ;     
+                    obot:actsOn             :bowl .
+
+:procedure1-step1-action3  a   pko:Action ;
+                    rdfs:label              "Place the bowl on the table" ;
+                    obot:nextAction         :procedure1-step1-action4 ;
+                    obot:requiresAffordance soma:Placing ;
+                    obot:actsOn             :bowl .
+
+:procedure1-step1-action4  a   pko:Action ;
+                    rdfs:label              "Close the cupboard" ;
+                    obot:requiresAffordance soma:Closing ;
+                    obot:actsOn             :tablewareCupboard .
+
+
+# STEP 2
+
+:procedure1-step2   a   pplan:Step ;
+                    rdfs:label              "Retrieve spoon" ;
+                    pko:requiresAction      :procedure1-step2-action1 ,
+                                            :procedure1-step2-action2 ,
+                                            :procedure1-step2-action3 ,
+                                            :procedure1-step2-action4 .
+
+:procedure1-step2-action1  a   pko:Action ;
+                    rdfs:label              "Open the drawer" ;
+                    obot:nextAction         :procedure1-step2-action2 ;
+                    obot:requiresAffordance soma:Opening ;
+                    obot:actsOn             :drawer .   
+
+:procedure1-step2-action2  a   pko:Action ;
+                    rdfs:label              "Grasp the spoon" ;
+                    obot:nextAction         :procedure1-step2-action3 ;
+                    obot:requiresAffordance soma:Grasping ;     
+                    obot:actsOn             :spoon .    
+
+:procedure1-step2-action3  a   pko:Action ;
+                    rdfs:label              "Place the spoon on the table" ;
+                    obot:nextAction         :procedure1-step2-action4 ;
+                    obot:requiresAffordance soma:Placing ;
+                    obot:actsOn             :spoon .    
+
+:procedure1-step2-action4  a   pko:Action ;
+                    rdfs:label              "Close the drawer" ;
+                    obot:requiresAffordance soma:Closing ;
+                    obot:actsOn             :drawer .   
+
+
+# STEP 3
+
+:procedure1-step3   a   pplan:Step ;
+                    rdfs:label              "Retrieve glass" ;
+                    pko:requiresAction      :procedure1-step3-action1 ,
+                                            :procedure1-step3-action2 ,
+                                            :procedure1-step3-action3 ,
+                                            :procedure1-step3-action4 .
+                                
+:procedure1-step3-action1  a   pko:Action ;
+                    rdfs:label              "Open the cupboard" ;
+                    obot:nextAction         :procedure1-step3-action2 ;
+                    obot:requiresAffordance soma:Opening ;
+                    obot:actsOn             :tablewareCupboard . 
+
+:procedure1-step3-action2  a   pko:Action ;
+                    rdfs:label              "Grasp the glass" ;
+                    obot:nextAction         :procedure1-step3-action3 ;
+                    obot:requiresAffordance soma:Grasping ;     
+                    obot:actsOn             :glass .    
+
+:procedure1-step3-action3  a   pko:Action ;
+                    rdfs:label              "Place the glass on the table" ;
+                    obot:nextAction         :procedure1-step3-action4 ;
+                    obot:requiresAffordance soma:Placing ;
+                    obot:actsOn             :glass .    
+
+:procedure1-step3-action4  a   pko:Action ;
+                    rdfs:label              "Close the cupboard" ;
+                    obot:requiresAffordance soma:Closing ;
+                    obot:actsOn             :tablewareCupboard . 
+
+
+###################################
+# PROCEDURE 2
+###################################
+
+:procedure2     a   pko:Procedure ;
+                    rdfs:label "Retrieve food" ;
+                    pko:hasStep :procedure2-step1, :procedure2-step2, :procedure2-step3 .
+
+# STEP 1
+
+:procedure2-step1   a   pplan:Step ;
+                    rdfs:label              "Retrieve milk" ;
+                    pko:requiresAction      :procedure2-step1-action1 ,
+                                            :procedure2-step1-action2 ,
+                                            :procedure2-step1-action3 ,
+                                            :procedure2-step1-action4 .
+
+:procedure2-step1-action1  a   pko:Action ;
+                    rdfs:label              "Open the fridge" ;
+                    obot:nextAction         :procedure2-step1-action2 ;
+                    obot:requiresAffordance soma:Opening ;
+                    obot:actsOn             :fridge .   
+
+:procedure2-step1-action2  a   pko:Action ;
+                    rdfs:label              "Grasp the milk" ;
+                    obot:nextAction         :procedure2-step1-action3 ;
+                    obot:requiresAffordance soma:Grasping ;     
+                    obot:actsOn             :milk .
+
+:procedure2-step1-action3  a   pko:Action ;
+                    rdfs:label              "Place the milk on the table" ;
+                    obot:nextAction         :procedure2-step1-action4 ;
+                    obot:requiresAffordance soma:Placing ;
+                    obot:actsOn             :milk . 
+
+:procedure2-step1-action4  a   pko:Action ; 
+                    rdfs:label              "Close the fridge" ;
+                    obot:requiresAffordance soma:Closing ;
+                    obot:actsOn             :fridge .   
+
+# STEP 2
+
+:procedure2-step2   a   pplan:Step ;
+                    rdfs:label              "Retrieve orange juice" ;
+                    pko:requiresAction      :procedure2-step2-action1 ,
+                                            :procedure2-step2-action2 ,
+                                            :procedure2-step2-action3 ,
+                                            :procedure2-step2-action4 .
+
+:procedure2-step2-action1  a   pko:Action ;
+                    rdfs:label              "Open the fridge" ;
+                    obot:nextAction         :procedure2-step2-action2 ;
+                    obot:requiresAffordance soma:Opening ;
+                    obot:actsOn             :fridge .   
+
+:procedure2-step2-action2  a   pko:Action ;
+                    rdfs:label              "Grasp the orange juice" ;
+                    obot:nextAction         :procedure2-step2-action3 ;
+                    obot:requiresAffordance soma:Grasping ;     
+                    obot:actsOn             :orangeJuice .  
+
+:procedure2-step2-action3  a   pko:Action ;
+                    rdfs:label              "Place the orange juice on the table" ;         
+                    obot:nextAction         :procedure2-step2-action4 ;
+                    obot:requiresAffordance soma:Placing ;
+                    obot:actsOn             :orangeJuice .  
+
+:procedure2-step2-action4  a   pko:Action ;     
+                    rdfs:label              "Close the fridge" ;
+                    obot:requiresAffordance soma:Closing ;
+                    obot:actsOn             :fridge .
+
+# STEP 3
+
+:procedure2-step3   a   pplan:Step ;
+                    rdfs:label              "Retrieve cereal" ;
+                    pko:requiresAction      :procedure2-step3-action1 ,
+                                            :procedure2-step3-action2 ,
+                                            :procedure2-step3-action3 ,
+                                            :procedure2-step3-action4 .
+
+:procedure2-step3-action1  a   pko:Action ;
+                    rdfs:label              "Open the cupboard" ;
+                    obot:nextAction         :procedure2-step3-action2 ;
+                    obot:requiresAffordance soma:Opening ;
+                    obot:actsOn             :foodCupboard .     
+
+:procedure2-step3-action2  a   pko:Action ;
+                    rdfs:label              "Grasp the cereal box" ;
+                    obot:nextAction         :procedure2-step3-action3 ;
+                    obot:requiresAffordance soma:Grasping ;     
+                    obot:actsOn             :cerealBox .
+
+:procedure2-step3-action3  a   pko:Action ;
+                    rdfs:label              "Place the cereal box on the table" ;
+                    obot:nextAction         :procedure2-step3-action4 ;
+                    obot:requiresAffordance soma:Placing ;
+                    obot:actsOn             :cerealBox .
+
+:procedure2-step3-action4  a   pko:Action ;
+                    rdfs:label              "Close the cupboard" ;
+                    obot:requiresAffordance soma:Closing ;
+                    obot:actsOn             :foodCupboard .
+
+
+###################################
+# PROCEDURE 3
+###################################
+
+:procedure3     a   pko:Procedure ;
+                    rdfs:label "Prepare breakfast" ;
+                    pko:hasStep :procedure3-step1, :procedure3-step2, :procedure3-step3 .
+
+# STEP 1
+
+:procedure3-step1   a   pplan:Step ;
+                    rdfs:label              "Serve milk" ;
+                    pko:nextStep            :procedure3-step3 ; 
+                    pko:requiresAction      :procedure3-step1-action1 ,
+                                            :procedure3-step1-action2 ,
+                                            :procedure3-step1-action3 .
+
+:procedure3-step1-action1  a   pko:Action ;
+                    rdfs:label              "Grasp the milk" ;
+                    obot:nextAction         :procedure3-step1-action2 ;
+                    obot:requiresAffordance soma:Grasping ;
+                    obot:actsOn             :milk .
+
+:procedure3-step1-action2  a   pko:Action ;
+                    rdfs:label              "Pour milk into the bowl" ;
+                    obot:nextAction         :procedure3-step1-action3 ;
+                    obot:requiresAffordance soma:Pouring ;
+                    obot:actsOn             :milk . 
+
+:procedure3-step1-action3  a   pko:Action ;
+                    rdfs:label              "Put milk down" ;
+                    obot:requiresAffordance soma:PuttingDown ;
+                    obot:actsOn             :milk .
+
+# STEP 2
+
+:procedure3-step2   a   pplan:Step ;
+                    rdfs:label              "Serve orange juice" ;
+                    pko:nextStep            :procedure3-step3 ; 
+                    pko:requiresAction      :procedure3-step2-action1 ,
+                                            :procedure3-step2-action2 ,
+                                            :procedure3-step2-action3 .
+
+:procedure3-step2-action1  a   pko:Action ;
+                    rdfs:label              "Grasp the orange juice" ;
+                    obot:nextAction         :procedure3-step2-action2 ;
+                    obot:requiresAffordance soma:Grasping ;
+                    obot:actsOn             :orangeJuice .      
+
+:procedure3-step2-action2  a   pko:Action ;
+                    rdfs:label              "Pour orange juice into the glass" ;
+                    obot:nextAction         :procedure3-step2-action3 ;
+                    obot:requiresAffordance soma:Pouring ;
+                    obot:actsOn             :orangeJuice .
+
+:procedure3-step2-action3  a   pko:Action ;
+                    rdfs:label              "Put orange juice down" ;       
+                    obot:requiresAffordance soma:PuttingDown ;
+                    obot:actsOn             :orangeJuice .  
+
+# STEP 3
+
+:procedure3-step3   a   pplan:Step ;
+                    rdfs:label              "Serve cereal" ;
+                    pko:requiresAction      :procedure3-step3-action1 ,
+                                            :procedure3-step3-action2 ,
+                                            :procedure3-step3-action3 .
+
+:procedure3-step3-action1  a   pko:Action ;
+                    rdfs:label              "Grasp the cereal box" ;
+                    obot:nextAction         :procedure3-step3-action2 ;
+                    obot:requiresAffordance soma:Grasping ;
+                    obot:actsOn             :cerealBox .
+
+:procedure3-step3-action2  a   pko:Action ;
+                    rdfs:label              "Pour cereal into the bowl" ;
+                    obot:nextAction         :procedure3-step3-action3 ;
+                    obot:requiresAffordance soma:Pouring ;
+                    obot:actsOn             :cerealBox .
+
+:procedure3-step3-action3  a   pko:Action ;
+                    rdfs:label              "Put cereal box down" ;
+                    obot:requiresAffordance soma:PuttingDown ;
+                    obot:actsOn             :cerealBox .
+
+
+

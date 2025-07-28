@@ -192,6 +192,14 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "has target location"@en .
 
 
+###  https://w3id.org/onto-bot#nextAction
+:nextAction rdf:type owl:ObjectProperty ;
+            rdfs:domain <https://w3id.org/pko#Action> ;
+            rdfs:range <https://w3id.org/pko#Action> ;
+            rdfs:comment "An action can lead to another action."@en ;
+            rdfs:label "next action"@en .
+
+
 ###  https://w3id.org/onto-bot#requiresAffordance
 :requiresAffordance rdf:type owl:ObjectProperty ;
                     rdfs:domain <https://w3id.org/pko#Action> ;

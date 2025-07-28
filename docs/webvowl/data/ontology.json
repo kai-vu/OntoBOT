@@ -52,16 +52,16 @@
         "value" : "obot",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/onto-bot#",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "2.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/onto-bot#",
         "type" : "label"
       } ],
       "title" : [ {
@@ -77,7 +77,7 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -101,22 +101,22 @@
     "id" : "26",
     "type" : "owl:Thing"
   }, {
-    "id" : "32",
+    "id" : "33",
     "type" : "owl:Class"
   }, {
     "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "36",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
     "id" : "17",
@@ -134,10 +134,10 @@
     "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "35",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -161,7 +161,7 @@
     "comment" : {
       "en" : "The target location of a component within the environment, which can be different from its current location."
     },
-    "id" : "6"
+    "id" : "4"
   }, {
     "iri" : "http://schema.org/PropertyValue",
     "baseIri" : "http://schema.org",
@@ -247,7 +247,7 @@
     "comment" : {
       "en" : "The current location of a component within the environment."
     },
-    "id" : "32"
+    "id" : "33"
   }, {
     "iri" : "https://w3id.org/pko#Action",
     "baseIri" : "https://w3id.org/pko",
@@ -265,7 +265,7 @@
       "IRI-based" : "Organization"
     },
     "attributes" : [ "external" ],
-    "id" : "35"
+    "id" : "36"
   }, {
     "iri" : "https://w3id.org/onto-bot#Location",
     "baseIri" : "https://w3id.org/onto-bot",
@@ -273,7 +273,7 @@
     "label" : {
       "IRI-based" : "Location"
     },
-    "id" : "5"
+    "id" : "3"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -292,7 +292,7 @@
       "IRI-based" : "Capability"
     },
     "attributes" : [ "external" ],
-    "id" : "3"
+    "id" : "6"
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
     "baseIri" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl",
@@ -354,7 +354,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "38"
+    "id" : "39"
   }, {
     "iri" : "http://data.mksmart.org/onto-ros/class#Node",
     "baseIri" : "http://data.mksmart.org/onto-ros/class",
@@ -363,13 +363,13 @@
       "IRI-based" : "Node"
     },
     "attributes" : [ "external" ],
-    "id" : "34"
+    "id" : "35"
   } ],
   "property" : [ {
     "id" : "2",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "4",
+    "id" : "5",
     "type" : "owl:objectProperty"
   }, {
     "id" : "8",
@@ -408,16 +408,33 @@
     "id" : "31",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "33",
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "36",
+    "id" : "34",
     "type" : "owl:objectProperty"
   }, {
     "id" : "37",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/onto-bot#hasTargetLocation",
+    "baseIri" : "https://w3id.org/onto-bot",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasTargetLocation",
+      "en" : "has target location"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "A component has a target location within the environment, which can be different from its current location."
+    },
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
     "iri" : "https://w3id.org/onto-bot#enablesAffordance",
     "baseIri" : "https://w3id.org/onto-bot",
     "range" : "1",
@@ -425,26 +442,12 @@
       "IRI-based" : "enablesAffordance",
       "en" : "enables affordance"
     },
-    "domain" : "3",
+    "domain" : "6",
     "comment" : {
       "en" : "A robot capability enables an affordance to be performed."
     },
     "attributes" : [ "object" ],
-    "id" : "2"
-  }, {
-    "iri" : "https://w3id.org/onto-bot#hasTargetLocation",
-    "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "hasTargetLocation",
-      "en" : "has target location"
-    },
-    "domain" : "5",
-    "comment" : {
-      "en" : "A component has a target location within the environment, which can be different from its current location."
-    },
-    "attributes" : [ "object" ],
-    "id" : "4"
+    "id" : "5"
   }, {
     "range" : "0",
     "domain" : "1",
@@ -529,23 +532,37 @@
     "attributes" : [ "object", "external" ],
     "id" : "28"
   }, {
-    "iri" : "https://w3id.org/onto-bot#hasCurrentLocation",
+    "iri" : "https://w3id.org/onto-bot#nextAction",
     "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "32",
+    "range" : "30",
     "label" : {
-      "IRI-based" : "hasCurrentLocation",
-      "en" : "has current location"
+      "IRI-based" : "nextAction",
+      "en" : "next action"
     },
-    "domain" : "5",
+    "domain" : "30",
     "comment" : {
-      "en" : "A component has a current location within the environment."
+      "en" : "An action can lead to another action."
     },
     "attributes" : [ "object" ],
     "id" : "31"
   }, {
+    "iri" : "https://w3id.org/onto-bot#hasCurrentLocation",
+    "baseIri" : "https://w3id.org/onto-bot",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasCurrentLocation",
+      "en" : "has current location"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "A component has a current location within the environment."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
     "iri" : "https://w3id.org/onto-bot#hasNode",
     "baseIri" : "https://w3id.org/onto-bot",
-    "range" : "34",
+    "range" : "35",
     "label" : {
       "IRI-based" : "hasNode",
       "en" : "has node"
@@ -555,7 +572,7 @@
       "en" : "An agent has a ROS node that allows it to interact with the ROS ecosystem."
     },
     "attributes" : [ "object" ],
-    "id" : "33"
+    "id" : "34"
   }, {
     "iri" : "https://w3id.org/onto-bot#hasAffordance",
     "baseIri" : "https://w3id.org/onto-bot",
@@ -569,7 +586,7 @@
       "en" : "A component has one or more affordances that indicate how it can be used."
     },
     "attributes" : [ "object" ],
-    "id" : "36"
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/onto-bot#requiresAffordance",
     "baseIri" : "https://w3id.org/onto-bot",
@@ -583,6 +600,6 @@
       "en" : "An action requires an affordance to be performed."
     },
     "attributes" : [ "object" ],
-    "id" : "37"
+    "id" : "38"
   } ]
 }

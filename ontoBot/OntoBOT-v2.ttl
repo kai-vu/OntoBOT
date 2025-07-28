@@ -107,6 +107,12 @@ _:org a schema:Organization ;
     rdfs:label "has node"@en ;
     rdfs:comment "An agent has a ROS node that allows it to interact with the ROS ecosystem."@en .
 
+<https://w3id.org/onto-bot#nextAction> a owl:ObjectProperty ;
+    rdfs:domain pko:Action ;
+    rdfs:range pko:Action ;
+    rdfs:label "next action"@en ;
+    rdfs:comment "An action can lead to another action."@en .
+
 <https://w3id.org/onto-bot#actsOn> a owl:ObjectProperty ;
     rdfs:domain pko:Action ;
     rdfs:range <https://w3id.org/onto-bot#Component> ;

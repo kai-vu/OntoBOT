@@ -173,6 +173,13 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <https://w3id.org/onto-bot#hasTargetLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A component has a target location within the environment, which can be different from its current location."@en .
 <https://w3id.org/onto-bot#hasTargetLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has target location"@en .
 # 
+# https://w3id.org/onto-bot#nextAction
+<https://w3id.org/onto-bot#nextAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/onto-bot#nextAction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pko#Action> .
+<https://w3id.org/onto-bot#nextAction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pko#Action> .
+<https://w3id.org/onto-bot#nextAction> <http://www.w3.org/2000/01/rdf-schema#comment> "An action can lead to another action."@en .
+<https://w3id.org/onto-bot#nextAction> <http://www.w3.org/2000/01/rdf-schema#label> "next action"@en .
+# 
 # https://w3id.org/onto-bot#requiresAffordance
 <https://w3id.org/onto-bot#requiresAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/onto-bot#requiresAffordance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pko#Action> .
