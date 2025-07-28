@@ -161,9 +161,6 @@
   "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -251,6 +248,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.ease-crc.org/ont/SOMA.owl#Affordance"
+  }, {
+    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"
   } ]
 }, {
   "@id" : "https://w3id.org/onto-bot#Agent",
@@ -341,21 +340,21 @@
     "@id" : "https://w3id.org/onto-bot#Component"
   } ]
 }, {
-  "@id" : "https://w3id.org/onto-bot#enablesTask",
+  "@id" : "https://w3id.org/onto-bot#enablesAffordance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A robot capability enables a physical task to be performed."
+    "@value" : "A robot capability enables an affordance to be performed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.mksmart.org/onto-ros/class#Capability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "enables task"
+    "@value" : "enables affordance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"
+    "@id" : "https://w3id.org/onto-bot#Affordance"
   } ]
 }, {
   "@id" : "https://w3id.org/onto-bot#hasAffordance",
@@ -446,41 +445,21 @@
     "@id" : "https://w3id.org/onto-bot#TargetLocation"
   } ]
 }, {
-  "@id" : "https://w3id.org/onto-bot#isEnabledBy",
+  "@id" : "https://w3id.org/onto-bot#requiresAffordance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A physical task is enabled by an affordance."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is enabled by"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/onto-bot#Affordance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance"
-  } ]
-}, {
-  "@id" : "https://w3id.org/onto-bot#requiresTask",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An action requires a physical task to be performed."
+    "@value" : "An action requires an affordance to be performed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/pko#Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "requires task"
+    "@value" : "requires affordance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"
+    "@id" : "https://w3id.org/onto-bot#Affordance"
   } ]
 }, {
   "@id" : "https://w3id.org/pko#Action",

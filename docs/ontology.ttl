@@ -131,10 +131,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance
-<http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance> rdf:type owl:ObjectProperty .
-
-
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent> rdf:type owl:ObjectProperty .
 
@@ -147,12 +143,12 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "acts on"@en .
 
 
-###  https://w3id.org/onto-bot#enablesTask
-:enablesTask rdf:type owl:ObjectProperty ;
-             rdfs:domain <http://data.mksmart.org/onto-ros/class#Capability> ;
-             rdfs:range <http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> ;
-             rdfs:comment "A robot capability enables a physical task to be performed."@en ;
-             rdfs:label "enables task"@en .
+###  https://w3id.org/onto-bot#enablesAffordance
+:enablesAffordance rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://data.mksmart.org/onto-ros/class#Capability> ;
+                   rdfs:range :Affordance ;
+                   rdfs:comment "A robot capability enables an affordance to be performed."@en ;
+                   rdfs:label "enables affordance"@en .
 
 
 ###  https://w3id.org/onto-bot#hasAffordance
@@ -196,21 +192,12 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "has target location"@en .
 
 
-###  https://w3id.org/onto-bot#isEnabledBy
-:isEnabledBy rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance> ;
-             rdfs:domain <http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> ;
-             rdfs:range :Affordance ;
-             rdfs:comment "A physical task is enabled by an affordance."@en ;
-             rdfs:label "is enabled by"@en .
-
-
-###  https://w3id.org/onto-bot#requiresTask
-:requiresTask rdf:type owl:ObjectProperty ;
-              rdfs:domain <https://w3id.org/pko#Action> ;
-              rdfs:range <http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> ;
-              rdfs:comment "An action requires a physical task to be performed."@en ;
-              rdfs:label "requires task"@en .
+###  https://w3id.org/onto-bot#requiresAffordance
+:requiresAffordance rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://w3id.org/pko#Action> ;
+                    rdfs:range :Affordance ;
+                    rdfs:comment "An action requires an affordance to be performed."@en ;
+                    rdfs:label "requires affordance"@en .
 
 
 #################################################################
@@ -271,7 +258,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/onto-bot#Affordance
 :Affordance rdf:type owl:Class ;
-            rdfs:subClassOf <http://www.ease-crc.org/ont/SOMA.owl#Affordance> .
+            rdfs:subClassOf <http://www.ease-crc.org/ont/SOMA.owl#Affordance> ,
+                            <http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> .
 
 
 ###  https://w3id.org/onto-bot#Agent

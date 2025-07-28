@@ -95,7 +95,7 @@ _:org a schema:Organization ;
 <https://w3id.org/onto-bot#Affordance> a owl:Class, dul:Entity ;
     rdfs:label "Affordance"@en ;
     rdfs:comment "An affordance is a property of an object that indicates how it can be used."@en ;
-    rdfs:subClassOf soma:Affordance .
+    rdfs:subClassOf soma:Affordance, soma:PhysicalTask .
 
 ###################################
 # OBJECT PROPERTIES
@@ -113,24 +113,17 @@ _:org a schema:Organization ;
     rdfs:label "acts on"@en ;
     rdfs:comment "An action acts on a component."@en .
 
-<https://w3id.org/onto-bot#requiresTask> a owl:ObjectProperty ;
+<https://w3id.org/onto-bot#requiresAffordance> a owl:ObjectProperty ;
     rdfs:domain pko:Action ;
-    rdfs:range soma:PhysicalTask ;
-    rdfs:label "requires task"@en ;
-    rdfs:comment "An action requires a physical task to be performed."@en .
+    rdfs:range <https://w3id.org/onto-bot#Affordance> ;
+    rdfs:label "requires affordance"@en ;
+    rdfs:comment "An action requires an affordance to be performed."@en .
 
-<https://w3id.org/onto-bot#enablesTask> a owl:ObjectProperty ;
+<https://w3id.org/onto-bot#enablesAffordance> a owl:ObjectProperty ;
     rdfs:domain ros:Capability ;
-    rdfs:range soma:PhysicalTask ;
-    rdfs:label "enables task"@en ;
-    rdfs:comment "A robot capability enables a physical task to be performed."@en .
-
-<https://w3id.org/onto-bot#isEnabledBy> a owl:ObjectProperty ;
-    rdfs:domain soma:PhysicalTask ;
-    rdfs:range <https://w3id.org/onto-bot#Affordance> ; 
-    rdfs:label "is enabled by"@en ;
-    rdfs:comment "A physical task is enabled by an affordance."@en ;
-    rdfs:subPropertyOf soma:isTaskDefinedInAffordance.
+    rdfs:range <https://w3id.org/onto-bot#Affordance> ;
+    rdfs:label "enables affordance"@en ;
+    rdfs:comment "A robot capability enables an affordance to be performed."@en .
 
 <https://w3id.org/onto-bot#hasAffordance> a owl:ObjectProperty ;
     rdfs:domain <https://w3id.org/onto-bot#Component> ;

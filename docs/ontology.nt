@@ -116,9 +116,6 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # #################################################################
 # 
 # 
-# http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance
-<http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
@@ -130,14 +127,13 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <https://w3id.org/onto-bot#actsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "An action acts on a component."@en .
 <https://w3id.org/onto-bot#actsOn> <http://www.w3.org/2000/01/rdf-schema#label> "acts on"@en .
 # 
-# https://w3id.org/onto-bot#enablesTask
-<https://w3id.org/onto-bot#enablesTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/onto-bot#enablesTask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.mksmart.org/onto-ros/class#Capability> .
+# https://w3id.org/onto-bot#enablesAffordance
+<https://w3id.org/onto-bot#enablesAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/onto-bot#enablesAffordance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.mksmart.org/onto-ros/class#Capability> .
 <http://data.mksmart.org/onto-ros/class#Capability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/onto-bot#enablesTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> .
-<http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/onto-bot#enablesTask> <http://www.w3.org/2000/01/rdf-schema#comment> "A robot capability enables a physical task to be performed."@en .
-<https://w3id.org/onto-bot#enablesTask> <http://www.w3.org/2000/01/rdf-schema#label> "enables task"@en .
+<https://w3id.org/onto-bot#enablesAffordance> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/onto-bot#Affordance> .
+<https://w3id.org/onto-bot#enablesAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "A robot capability enables an affordance to be performed."@en .
+<https://w3id.org/onto-bot#enablesAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "enables affordance"@en .
 # 
 # https://w3id.org/onto-bot#hasAffordance
 <https://w3id.org/onto-bot#hasAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -177,20 +173,12 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <https://w3id.org/onto-bot#hasTargetLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A component has a target location within the environment, which can be different from its current location."@en .
 <https://w3id.org/onto-bot#hasTargetLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has target location"@en .
 # 
-# https://w3id.org/onto-bot#isEnabledBy
-<https://w3id.org/onto-bot#isEnabledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/onto-bot#isEnabledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance> .
-<https://w3id.org/onto-bot#isEnabledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> .
-<https://w3id.org/onto-bot#isEnabledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/onto-bot#Affordance> .
-<https://w3id.org/onto-bot#isEnabledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical task is enabled by an affordance."@en .
-<https://w3id.org/onto-bot#isEnabledBy> <http://www.w3.org/2000/01/rdf-schema#label> "is enabled by"@en .
-# 
-# https://w3id.org/onto-bot#requiresTask
-<https://w3id.org/onto-bot#requiresTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/onto-bot#requiresTask> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pko#Action> .
-<https://w3id.org/onto-bot#requiresTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> .
-<https://w3id.org/onto-bot#requiresTask> <http://www.w3.org/2000/01/rdf-schema#comment> "An action requires a physical task to be performed."@en .
-<https://w3id.org/onto-bot#requiresTask> <http://www.w3.org/2000/01/rdf-schema#label> "requires task"@en .
+# https://w3id.org/onto-bot#requiresAffordance
+<https://w3id.org/onto-bot#requiresAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/onto-bot#requiresAffordance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pko#Action> .
+<https://w3id.org/onto-bot#requiresAffordance> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/onto-bot#Affordance> .
+<https://w3id.org/onto-bot#requiresAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "An action requires an affordance to be performed."@en .
+<https://w3id.org/onto-bot#requiresAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "requires affordance"@en .
 # 
 # 
 # 
@@ -213,6 +201,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <http://www.ease-crc.org/ont/SOMA.owl#Affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask
+<http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -237,6 +226,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # https://w3id.org/onto-bot#Affordance
 <https://w3id.org/onto-bot#Affordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/onto-bot#Affordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ease-crc.org/ont/SOMA.owl#Affordance> .
+<https://w3id.org/onto-bot#Affordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask> .
 # 
 # https://w3id.org/onto-bot#Agent
 <https://w3id.org/onto-bot#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

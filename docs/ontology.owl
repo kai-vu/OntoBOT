@@ -217,13 +217,6 @@
     
 
 
-    <!-- http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance"/>
-    
-
-
     <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent -->
 
 
@@ -243,14 +236,14 @@
     
 
 
-    <!-- https://w3id.org/onto-bot#enablesTask -->
+    <!-- https://w3id.org/onto-bot#enablesAffordance -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#enablesTask">
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#enablesAffordance">
         <rdfs:domain rdf:resource="http://data.mksmart.org/onto-ros/class#Capability"/>
-        <rdfs:range rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"/>
-        <rdfs:comment xml:lang="en">A robot capability enables a physical task to be performed.</rdfs:comment>
-        <rdfs:label xml:lang="en">enables task</rdfs:label>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Affordance"/>
+        <rdfs:comment xml:lang="en">A robot capability enables an affordance to be performed.</rdfs:comment>
+        <rdfs:label xml:lang="en">enables affordance</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -316,27 +309,14 @@
     
 
 
-    <!-- https://w3id.org/onto-bot#isEnabledBy -->
+    <!-- https://w3id.org/onto-bot#requiresAffordance -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#isEnabledBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance"/>
-        <rdfs:domain rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"/>
-        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Affordance"/>
-        <rdfs:comment xml:lang="en">A physical task is enabled by an affordance.</rdfs:comment>
-        <rdfs:label xml:lang="en">is enabled by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/onto-bot#requiresTask -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#requiresTask">
+    <owl:ObjectProperty rdf:about="https://w3id.org/onto-bot#requiresAffordance">
         <rdfs:domain rdf:resource="https://w3id.org/pko#Action"/>
-        <rdfs:range rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"/>
-        <rdfs:comment xml:lang="en">An action requires a physical task to be performed.</rdfs:comment>
-        <rdfs:label xml:lang="en">requires task</rdfs:label>
+        <rdfs:range rdf:resource="https://w3id.org/onto-bot#Affordance"/>
+        <rdfs:comment xml:lang="en">An action requires an affordance to be performed.</rdfs:comment>
+        <rdfs:label xml:lang="en">requires affordance</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -449,6 +429,7 @@
 
     <owl:Class rdf:about="https://w3id.org/onto-bot#Affordance">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Affordance"/>
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask"/>
     </owl:Class>
     
 

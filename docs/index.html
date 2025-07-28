@@ -163,7 +163,7 @@ This ontology has the following classes and properties.</span>
       <a href="#actsOn" title="https://w3id.org/onto-bot#actsOn">acts on</a>
    </li>
    <li>
-      <a href="#enablesTask" title="https://w3id.org/onto-bot#enablesTask">enables task</a>
+      <a href="#enablesAffordance" title="https://w3id.org/onto-bot#enablesAffordance">enables affordance</a>
    </li>
    <li>
       <a href="#hasAffordance" title="https://w3id.org/onto-bot#hasAffordance">has affordance</a>
@@ -181,10 +181,7 @@ This ontology has the following classes and properties.</span>
       <a href="#hasTargetLocation" title="https://w3id.org/onto-bot#hasTargetLocation">has target location</a>
    </li>
    <li>
-      <a href="#isEnabledBy" title="https://w3id.org/onto-bot#isEnabledBy">is enabled by</a>
-   </li>
-   <li>
-      <a href="#requiresTask" title="https://w3id.org/onto-bot#requiresTask">requires task</a>
+      <a href="#requiresAffordance" title="https://w3id.org/onto-bot#requiresAffordance">requires affordance</a>
    </li>
 </ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -225,13 +222,13 @@ This section provides details for each class and property defined by Ontology fo
     has super-classes
    </dt>
    <dd>
-    <a href="http://www.ease-crc.org/ont/SOMA.owl#Affordance" target="_blank" title="http://www.ease-crc.org/ont/SOMA.owl#Affordance">Affordance</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://www.ease-crc.org/ont/SOMA.owl#Affordance" target="_blank" title="http://www.ease-crc.org/ont/SOMA.owl#Affordance">Affordance</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask" target="_blank" title="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask">Physical Task</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasAffordance" title="https://w3id.org/onto-bot#hasAffordance">has affordance</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEnabledBy" title="https://w3id.org/onto-bot#isEnabledBy">is enabled by</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#enablesAffordance" title="https://w3id.org/onto-bot#enablesAffordance">enables affordance</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAffordance" title="https://w3id.org/onto-bot#hasAffordance">has affordance</a> <sup class="type-op" title="object property">op</sup>, <a href="#requiresAffordance" title="https://w3id.org/onto-bot#requiresAffordance">requires affordance</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is also defined as
@@ -344,14 +341,13 @@ This section provides details for each class and property defined by Ontology fo
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
   <li><a href="#actsOn" title="https://w3id.org/onto-bot#actsOn">acts on</a></li>
-  <li><a href="#enablesTask" title="https://w3id.org/onto-bot#enablesTask">enables task</a></li>
+  <li><a href="#enablesAffordance" title="https://w3id.org/onto-bot#enablesAffordance">enables affordance</a></li>
   <li><a href="#hasAffordance" title="https://w3id.org/onto-bot#hasAffordance">has affordance</a></li>
   <li><a href="#hasComponent" title="https://w3id.org/onto-bot#hasComponent">has component</a></li>
   <li><a href="#hasCurrentLocation" title="https://w3id.org/onto-bot#hasCurrentLocation">has current location</a></li>
   <li><a href="#hasNode" title="https://w3id.org/onto-bot#hasNode">has node</a></li>
   <li><a href="#hasTargetLocation" title="https://w3id.org/onto-bot#hasTargetLocation">has target location</a></li>
-  <li><a href="#isEnabledBy" title="https://w3id.org/onto-bot#isEnabledBy">is enabled by</a></li>
-  <li><a href="#requiresTask" title="https://w3id.org/onto-bot#requiresTask">requires task</a></li>
+  <li><a href="#requiresAffordance" title="https://w3id.org/onto-bot#requiresAffordance">requires affordance</a></li>
  </ul>
  <div class="entity" id="actsOn">
   <h3>acts on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -376,11 +372,11 @@ This section provides details for each class and property defined by Ontology fo
    </dl>
   </div>
  </div>
- <div class="entity" id="enablesTask">
-  <h3>enables task<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/onto-bot#enablesTask</p>
+ <div class="entity" id="enablesAffordance">
+  <h3>enables affordance<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/onto-bot#enablesAffordance</p>
   <div class="comment">
-   <span class="markdown">A robot capability enables a physical task to be performed.</span>
+   <span class="markdown">A robot capability enables an affordance to be performed.</span>
   </div>
   <div class="description">
    <dl>
@@ -394,7 +390,7 @@ This section provides details for each class and property defined by Ontology fo
      has range
     </dt>
     <dd>
-     <a href="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask" target="_blank" title="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask">Physical Task</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Affordance" title="https://w3id.org/onto-bot#Affordance">Affordance</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -520,40 +516,11 @@ This section provides details for each class and property defined by Ontology fo
    </dl>
   </div>
  </div>
- <div class="entity" id="isEnabledBy">
-  <h3>is enabled by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/onto-bot#isEnabledBy</p>
+ <div class="entity" id="requiresAffordance">
+  <h3>requires affordance<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/onto-bot#requiresAffordance</p>
   <div class="comment">
-   <span class="markdown">A physical task is enabled by an affordance.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance" target="_blank" title="http://www.ease-crc.org/ont/SOMA.owl#isTaskDefinedInAffordance">is Task Defined In Affordance</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask" target="_blank" title="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask">Physical Task</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Affordance" title="https://w3id.org/onto-bot#Affordance">Affordance</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="requiresTask">
-  <h3>requires task<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/onto-bot#requiresTask</p>
-  <div class="comment">
-   <span class="markdown">An action requires a physical task to be performed.</span>
+   <span class="markdown">An action requires an affordance to be performed.</span>
   </div>
   <div class="description">
    <dl>
@@ -567,7 +534,7 @@ This section provides details for each class and property defined by Ontology fo
      has range
     </dt>
     <dd>
-     <a href="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask" target="_blank" title="http://www.ease-crc.org/ont/SOMA.owl#PhysicalTask">Physical Task</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Affordance" title="https://w3id.org/onto-bot#Affordance">Affordance</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
