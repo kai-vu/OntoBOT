@@ -1,0 +1,73 @@
+@prefix :       <https://example.org/> .
+@prefix obot:   <https://w3id.org/onto-bot#> .
+
+###################################
+# ENVIRONMENT
+###################################
+
+:kitchenEnvironment a obot:Environment ;
+    rdfs:label          "Kitchen Environment"@en ;
+    rdfs:comment        "A kitchen environment where various tasks can be performed."@en ;
+    obot:hasComponent   :tablewareCupboard, :foodCupboard, :fridge, :table, 
+                        :dishwasher, :cerealBox, :orangeJuice, :milk, :glass, :drawer, :spoon, :bowl .
+
+:tablewareCupboard a obot:Component ;
+    rdfs:label          "Tableware Cupboard"@en ;
+    rdfs:comment        "A cupboard containing tableware such as bowls and glasses."@en ;
+    obot:hasAffordance  soma:Opening, soma:Closing,  soma:Placing.
+
+:foodCupboard a obot:Component ;
+    rdfs:label          "Food Cupboard"@en ;
+    rdfs:comment        "A cupboard containing food items such as cereal boxes."@en ;
+    obot:hasAffordance  soma:Opening, soma:Closing, soma:Placing .        
+
+:fridge a obot:Component ;
+    rdfs:label          "Fridge"@en ;           
+    rdfs:comment        "A fridge where perishable items are stored."@en ;
+    obot:hasAffordance  soma:Opening, soma:Closing, soma:Placing .
+
+:table a obot:Component ;
+    rdfs:label          "Table"@en ;
+    rdfs:comment        "A table where items can be placed."@en ;
+    obot:hasAffordance  soma:Placing .  
+
+:dishwasher a obot:Component ;
+    rdfs:label          "Dishwasher"@en ;
+    rdfs:comment        "A dishwasher for cleaning dishes."@en ;
+    obot:hasAffordance  soma:Opening, soma:Closing, soma:Placing .
+
+:cerealBox a obot:Component ;
+    rdfs:label          "Cereal Box"@en ;
+    rdfs:comment        "A box containing cereal."@en ;
+    obot:hasAffordance  soma:Grasping, soma:Placing, soma:Pouring, soma:PuttingDown .
+
+:orangeJuice a obot:Component ;
+    rdfs:label          "Orange Juice"@en ;
+    rdfs:comment        "A container of orange juice."@en ;
+    obot:hasAffordance  soma:Grasping, soma:Placing , soma:Pouring, soma:PuttingDown .
+
+:milk a obot:Component ;
+    rdfs:label          "Milk"@en ;
+    rdfs:comment        "A container of milk."@en ;
+    obot:hasAffordance  soma:Grasping, soma:Placing, soma:Pouring, soma:PuttingDown .
+
+:glass a obot:Component ;
+    rdfs:label          "Glass"@en ;
+    rdfs:comment        "A glass used for drinking."@en ;       
+    obot:hasAffordance  soma:Grasping, soma:Placing .
+
+:drawer a obot:Component ;
+    rdfs:label          "Drawer"@en ;
+    rdfs:comment        "A drawer where utensils like spoons can be stored."@en ;
+    obot:hasAffordance  soma:Opening, soma:Closing .
+
+:spoon a obot:Component ;   
+    rdfs:label          "Spoon"@en ;
+    rdfs:comment        "A spoon used for eating or stirring."@en ;
+    obot:hasAffordance  soma:Grasping, soma:Placing .
+
+:bowl a obot:Component ;
+    rdfs:label          "Bowl"@en ;
+    rdfs:comment        "A bowl used for serving or eating food."@en ;
+    obot:hasAffordance  soma:Grasping, soma:Placing .
+

@@ -84,14 +84,6 @@ _:org a schema:Organization ;
     rdfs:comment "A component is a part of an environment that can be used to perform tasks or actions."@en ;
     rdfs:subClassOf dul:PhysicalObject .
 
-<https://w3id.org/onto-bot#CurrentLocation> a owl:Class ;
-    rdfs:label "Current Location"@en ;
-    rdfs:comment "The current location of a component within the environment."@en .
-
-<https://w3id.org/onto-bot#TargetLocation> a owl:Class ;
-    rdfs:label "Target Location"@en ;
-    rdfs:comment "The target location of a component within the environment, which can be different from its current location."@en .
-
 <https://w3id.org/onto-bot#Affordance> a owl:Class, dul:Entity ;
     rdfs:label "Affordance"@en ;
     rdfs:comment "An affordance is a property of an object that indicates how it can be used."@en ;
@@ -143,15 +135,3 @@ _:org a schema:Organization ;
     rdfs:label "has component"@en ;
     rdfs:comment "An environment has one or more components."@en ;
     rdfs:subPropertyOf dul:hasComponent .
-
-<https://w3id.org/onto-bot#hasCurrentLocation> a owl:ObjectProperty ;
-    rdfs:domain <https://w3id.org/onto-bot#Location> ;
-    rdfs:range <https://w3id.org/onto-bot#CurrentLocation> ;
-    rdfs:label "has current location"@en ;
-    rdfs:comment "A component has a current location within the environment."@en .
-
-<https://w3id.org/onto-bot#hasTargetLocation> a owl:ObjectProperty ;
-    rdfs:domain <https://w3id.org/onto-bot#Location> ;
-    rdfs:range <https://w3id.org/onto-bot#TargetLocation> ;
-    rdfs:label "has target location"@en ;
-    rdfs:comment "A component has a target location within the environment, which can be different from its current location."@en .
