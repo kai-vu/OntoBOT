@@ -1,6 +1,7 @@
 @prefix :       <https://example.org/> .
 @prefix prov:   <http://www.w3.org/ns/prov#> .
 @prefix pko:    <https://w3id.org/pko#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix pplan:  <http://purl.org/net/p-plan#> .
 @prefix soma:   <http://www.ease-crc.org/ont/SOMA.owl#> .

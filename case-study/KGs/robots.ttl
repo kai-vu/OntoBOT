@@ -2,10 +2,11 @@
 @prefix obot:   <https://w3id.org/onto-bot#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix soma:   <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix ros:    <http://data.mksmart.org/onto-ros/class#> .
 
 
 ###################################
-# AGENT TIAGo
+# ROBOT TIAGo
 ###################################
 
 :tiagoRobot a obot:Agent ;
@@ -24,7 +25,7 @@
 
 
 ###################################
-# AGENT UR3
+# ROBOT UR3
 ###################################
 
 :ur3Robot a obot:Agent ;
@@ -43,7 +44,7 @@
 
 
 ###################################
-# AGENT Stretch
+# ROBOT Stretch
 ###################################
 
 :stretchRobot a obot:Agent ;
@@ -62,7 +63,7 @@
 
 
 ###################################
-# AGENT HSR
+# ROBOT HSR
 ###################################
 
 :hsrRobot a obot:Agent ;
