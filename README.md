@@ -52,7 +52,7 @@ Its design enables symbolic planning that is grounded in execution and environme
 
 ### 📘 Ontology Schema
 
-![OntoBOT Schema Diagram](./docs/7aa0525e-8918-4e2b-890c-4d97f88bf3dc.png)
+![OntoBOT Schema Diagram](<img width="763" height="796" alt="ontoBOT" src="https://github.com/user-attachments/assets/cff3b794-b7ef-4189-80ec-bd5011bf3302" />)
 
 > **Figure**: Core structure of the OntoBOT ontology, illustrating how agents, environments, tasks, affordances, and capabilities are semantically interlinked.  
 > Based on `obot`, `pko`, `pplan`, `soma`, and `ros` ontologies.
