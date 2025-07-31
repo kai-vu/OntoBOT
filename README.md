@@ -77,20 +77,16 @@ These were used to validate OntoBOT through **competency questions**, such as:
 ---
 
 ## 📂 Repository Contents
-
+```
 OntoBOT/
 │
 ├── ontoBot/ # Ontology files (.ttl, .owl)
 ├── case-study/ # RDF data for robots, tasks, environment
-│ ├── prepare-breakfast.ttl
-│ ├── reorganise-kitchen.ttl
-│ ├── robot-capabilities.ttl
 │ └── cqs.ipynb # Jupyter notebook with SPARQL queries
 ├── docs/ # Diagrams and visualizations
 ├── LICENSE
 └── README.md
-
-
+```
 ---
 
 ## 🔍 Evaluation via Competency Questions
