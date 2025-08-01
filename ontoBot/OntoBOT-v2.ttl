@@ -77,7 +77,7 @@ _:org a schema:Organization ;
 <https://w3id.org/onto-bot#Environment> a owl:Class ;
     rdfs:label "Environment"@en ;
     rdfs:comment "An environment is a space where components are located and actions can be performed."@en ;
-    rdfs:subClassOf dul:Space .
+    rdfs:subClassOf dul:Place .
 
 <https://w3id.org/onto-bot#Component> a owl:Class ;
     rdfs:label "Component"@en ;

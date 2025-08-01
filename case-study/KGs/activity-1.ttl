@@ -238,7 +238,7 @@
 ###################################
 
 :procedure3     a   pko:Procedure ;
-                    rdfs:label "Prepare food" ;
+                    rdfs:label "Serve food" ;
                     pko:hasStep :procedure3-step1, :procedure3-step2, :procedure3-step3 .
 
 # STEP 1

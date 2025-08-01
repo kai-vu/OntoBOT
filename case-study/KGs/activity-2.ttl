@@ -120,6 +120,11 @@
                     obot:requiresAffordance soma:Placing ;
                     obot:actsOn             :cerealBox .    
 
+:procedure1-step3-action4  a   pko:Action ;
+                    rdfs:label              "Close the cupboard" ;
+                    obot:requiresAffordance soma:Closing ;
+                    obot:actsOn             :foodCupboard .   
+
 
 ###################################
 # PROCEDURE 2
