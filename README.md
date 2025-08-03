@@ -101,17 +101,3 @@ OntoBOT/
 
 See: [`case-study/cqs.ipynb`](./case-study/cqs.ipynb)
 
----
-
-## 📜 Citation
-
-If you use OntoBOT, please cite:
-
-```bibtex
-@inproceedings{martorana2025ontobot,
-  title     = {An Ontology for Unified Modeling of Tasks, Actions, Environments, and Capabilities in Personal Service Robotics},
-  author    = {Martorana, Margherita and Urgese, Francesca and Tiddi, Ilaria and Schlobach, Stefan},
-  booktitle = {Proceedings of the 12th International Conference on Knowledge Capture (K-CAP)},
-  year      = {2025},
-  publisher = {ACM}
-}
