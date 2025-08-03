@@ -19,7 +19,7 @@
     ros:hasMessage [
         ros:evokes [
             obot:enablesAffordance soma:Grasping, soma:Holding, soma:Opening, soma:Closing, 
-                                    soma:Pouring, soma:Placing, soma:PuttingDown ;
+                                    soma:Pouring, soma:Placing;
         ]
     ] .
 
@@ -37,8 +37,7 @@
     ros:hasComponent :ur3CommunicationComponent ;
     ros:hasMessage [
         ros:evokes [
-            obot:enablesAffordance soma:Grasping, soma:Holding, 
-                                    soma:Pouring, soma:Placing, soma:PuttingDown ;
+            obot:enablesAffordance soma:Grasping, soma:Holding, soma:Pouring, soma:Placing ;
         ]
     ] .
 
@@ -56,8 +55,7 @@
     ros:hasComponent :stretchCommunicationComponent ;
     ros:hasMessage [
         ros:evokes [
-            obot:enablesAffordance soma:Grasping, soma:Opening, soma:Closing, 
-                                    soma:Placing, soma:PuttingDown ;
+            obot:enablesAffordance soma:Grasping, soma:Holding, soma:Placing ;
         ]
     ] .     
 
@@ -76,7 +74,7 @@
     ros:hasMessage [
         ros:evokes [
             obot:enablesAffordance soma:Grasping, soma:Holding, soma:Opening, soma:Closing, 
-                                    soma:Placing, soma:PuttingDown ;
+                                    soma:Placing;
         ]
     ] . 
 
